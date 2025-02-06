@@ -16,34 +16,34 @@ if (process.env.NODE_ENV !== "production") {
   logger.add(
     new winston.transports.Console({
       format: winston.format.simple(),
-    }),
+    })
   );
 }
 
 /**
- * User role check middleware
+ * Authentication Middleware
  * @param {FastifyRequest} request
  * @param {FastifyReply} reply
  */
 export const authenticateUser = async (request, reply) => {
   try {
-    const token =
-      request.headers.authorization?.replace("Bearer ", "") ||
-      request.cookies.token;
+    // Prioritize token from cookies before headers
+    const token = request.cookies.token || request.headers.authorization?.replace("Bearer ", "");
 
     if (!token) {
-      logger.info("Unauthorized access attempt: No token provided");
+      logger.warn("Unauthorized access attempt: No token provided");
       return reply.code(401).send({
         error: "Unauthorized",
-        message: "No token provided",
+        message: "Authentication token is missing",
       });
     }
+
     // Verify JWT token
     const decoded = await request.jwtVerify({
       secret: process.env.JWT_SECRET || "hurry",
     });
 
-    // Add user to request for later use
+    // Attach user info to request object
     request.user = {
       id: decoded.id,
       firstname: decoded.firstname,
@@ -52,68 +52,60 @@ export const authenticateUser = async (request, reply) => {
       email: decoded.email,
     };
 
-    request.log.info(`User ${decoded.id} with ${decoded.firstname} authenticated successfully`);
-    return;
+    request.log.info(`User ${decoded.email} authenticated successfully`);
   } catch (err) {
-    logger.info(`Authentication failed: ${err.message}`);
+    logger.error(`Authentication failed: ${err.message}`);
     return reply.code(401).send({
       error: "Unauthorized",
-      message: err.message,
+      message: "Invalid or expired authentication token",
     });
   }
 };
 
-// Admin Authentication
 /**
- * User role check middleware
+ * Admin Authorization Middleware
+ * Ensures only admin users can access certain routes.
  * @param {FastifyRequest} request
  * @param {FastifyReply} reply
  */
 export const isAdmin = async (request, reply) => {
   try {
-    await request.jwtVerify();
-    const user = request.user;
-
-    if (!user || user.role !== "admin") {
-      logger.info("Unauthorized access attempt: Only Admins.");
+    if (!request.user || request.user.role !== "admin") {
+      logger.warn(`Unauthorized admin access attempt by ${request.user?.email || "Unknown User"}`);
       return reply.code(403).send({
-        error: "Access denied. Admins Only",
+        error: "Forbidden",
         message: "Admin privileges required.",
       });
     }
-    return;
   } catch (err) {
-    logger.info("Authentication failed: " + err.message);
+    logger.error(`Authorization failed: ${err.message}`);
     return reply.code(401).send({
       error: "Unauthorized",
-      message: "Invalid or expired token",
+      message: "Invalid or expired authentication token",
     });
   }
 };
 
 /**
- * User role check middleware
+ * User Authorization Middleware
+ * Ensures only regular users can access certain routes.
  * @param {FastifyRequest} request
  * @param {FastifyReply} reply
  */
 export const isUser = async (request, reply) => {
   try {
-    await request.jwtVerify();
-    const user = request.user;
-
-    if (!user || user.role !== "user") {
-      logger.info(`Unauthorized access from email: ${decoded.email}`);
+    if (!request.user || request.user.role !== "user") {
+      logger.warn(`Unauthorized user access attempt by ${request.user?.email || "Unknown User"}`);
       return reply.code(403).send({
-        error: "Access denied",
-        message: "User privileges required",
+        error: "Forbidden",
+        message: "User privileges required.",
       });
     }
-    return;
   } catch (err) {
-    logger.info(`Unauthorized access from email: ${decoded.email}`);
+    logger.error(`Authorization failed: ${err.message}`);
     return reply.code(401).send({
       error: "Unauthorized",
-      message: "Invalid or expired token",
+      message: "Invalid or expired authentication token",
     });
   }
 };
