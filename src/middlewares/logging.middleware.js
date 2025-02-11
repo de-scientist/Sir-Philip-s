@@ -25,10 +25,30 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 /**
- * Logging Middleware
- * Logs request method and URL
+ * Authentication Middleware
+ * Extracts JWT from cookies instead of headers.
  */
-export const loggingMiddleware = (req, reply, next) => {
-  logger.info(`Incoming Request: ${req.method} ${req.url} from ${req.ip}`);
-  next();
+export const authMiddleware = async (req, reply, next) => {
+  try {
+    // ✅ Extract JWT from HTTP-only cookies
+    const token = req.cookies.token;
+
+    if (!token) {
+      logger.warn("Unauthorized access attempt - No token provided");
+      return reply.status(401).send({ data: { message: "Unauthorized. Please log in." } });
+    }
+
+    // ✅ Verify token
+    try {
+      const decoded = req.server.jwt.verify(token);
+      req.user = decoded; // Attach decoded user info to request
+      next(); // Proceed to the next middleware
+    } catch (error) {
+      logger.error(`Invalid token: ${error.message}`);
+      return reply.status(403).send({ data: { message: "Invalid or expired token. Please log in again." } });
+    }
+  } catch (error) {
+    logger.error(`Authentication Middleware Error: ${error.message}`);
+    return reply.status(500).send({ data: { message: "Authentication error. Please try again later." } });
+  }
 };

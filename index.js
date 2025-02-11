@@ -1,5 +1,5 @@
 import Fastify from "fastify";
-import dotenv from "dotenv";
+import { config } from "./env.js"; // Import configurations from env.js
 import fastifyCookie from "@fastify/cookie";
 import fastifyJwt from "@fastify/jwt";
 import fastifyRateLimit from "@fastify/rate-limit";
@@ -14,8 +14,6 @@ import { reviewRoutes } from "./src/routes/review.routes.js";
 import { cartRoutes } from "./src/routes/cart.routes.js";
 import { variantRoutes } from "./src/routes/variation.routes.js";
 
-dotenv.config();
-const PORT = process.env.PORT || 3000;
 const server = Fastify({
   logger: {
     transport: {
@@ -23,17 +21,26 @@ const server = Fastify({
     },
   },
 });
-//Register JWT
+
+// Register JWT
 server.register(fastifyJwt, {
-  secret: process.env.JWT_SECRET || "hurry",
+  secret: config.JWT_SECRET,
   sign: { algorithm: "HS256" },
   verify: { algorithms: ["HS256"] },
 });
 
-//Register @fastifyCookie
-server.register(fastifyCookie);
+// Register @fastify/cookie with secure options
+server.register(fastifyCookie, {
+  secret: config.COOKIE_SECRET, // Encrypt signed cookies
+  hook: "onRequest",
+  parseOptions: {
+    httpOnly: true, // Prevent JavaScript access
+    secure: config.NODE_ENV === "production", // Use secure cookies in production
+    sameSite: "Strict", // Prevent CSRF attacks
+  },
+});
 
-//Register middleware
+// Register middleware
 server.addHook("preHandler", loggingMiddleware);
 server.addHook("preHandler", (req, reply, done) => {
   reply.header("Access-Control-Allow-Origin", "*");
@@ -46,7 +53,7 @@ server.addHook("preHandler", (req, reply, done) => {
   done();
 });
 
-//Register rate limiting
+// Register rate limiting
 server.register(fastifyRateLimit, {
   global: true,
   max: 100,
@@ -55,7 +62,7 @@ server.register(fastifyRateLimit, {
     "Too many login attempts from this IP, please try again after 15 minutes",
 });
 
-//Register the routes
+// Register the routes
 registerRoutes(server);
 loginRouter(server);
 logoutRoutes(server);
@@ -67,10 +74,10 @@ cartRoutes(server);
 variantRoutes(server);
 
 const start = async () => {
-  const HOST = "RENDER" in process.env ? `0.0.0.0` : `localhost`;
+  const HOST = config.NODE_ENV === "production" ? `0.0.0.0` : `localhost`;
   try {
-    await server.listen({ host: HOST, port: PORT });
-    console.log(`Server listening on port ${PORT}`);
+    await server.listen({ host: HOST, port: config.PORT });
+    console.log(`Server listening on port ${config.PORT}`);
   } catch (error) {
     console.error(error);
     process.exit(1);

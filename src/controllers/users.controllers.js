@@ -8,7 +8,7 @@ import { z } from 'zod';
 const registerSchema = z.object({
   firstname: z.string().min(2, 'Firstname should have at least 2 characters'),
   lastname: z.string().min(2, 'Lastname should have at least 2 characters'),
-  email: z.string().email('Invalid email address'),
+  email: z.string().email('User does not exist. Please register.'),
   password: z.string().min(8, 'Password should have at least 8 characters'),
   phoneNo: z.string().optional(),
   avatar: z.string().optional(),
@@ -16,7 +16,7 @@ const registerSchema = z.object({
 
 // Login user validation schema
 const loginSchema = z.object({
-  email: z.string().email('Invalid email address'),
+  email: z.string().email('User does not exist. Please register.'),
   password: z.string().min(8, 'Password should have at least 8 characters'),
 });
 
@@ -36,7 +36,7 @@ export const registerUser = async (request, reply) => {
 
     if (!parsedBody.success) {
       return reply.status(400).send({
-        message: 'Invalid input',
+        message: 'Email or password is incorrect.',
         errors: parsedBody.error.errors,
       });
     }
@@ -82,7 +82,7 @@ export const loginUser = async (request, reply) => {
 
     if (!parsedBody.success) {
       return reply.status(400).send({
-        message: 'Invalid input',
+        message: 'Email or password is incorrect.',
         errors: parsedBody.error.errors,
       });
     }
@@ -102,7 +102,7 @@ export const loginUser = async (request, reply) => {
     const isValidPassword = await bcrypt.compare(password, user.password);
 
     if (!isValidPassword) {
-      return reply.status(401).send({ message: 'Invalid credentials' });
+      return reply.status(401).send({ message: 'Invalid password' });
     }
 
     // Generate JWT token (using @fastify/jwt)
@@ -148,7 +148,7 @@ export const updateUserProfile = async (request, reply) => {
 
     if (!parsedBody.success) {
       return reply.status(400).send({
-        message: 'Invalid input',
+        message: 'Email or password is incorrect.',
         errors: parsedBody.error.errors,
       });
     }
