@@ -56,12 +56,52 @@ export const createMany = async(req, reply) => {
 export const getProducts = async (req, reply) => {
   try {
     logger.info('Fetching all products');
-    const products = await prisma.product.findMany();
 
-    logger.info(`Products found ${products}`);
-    reply.status(200).send(products);
+    // Extract query parameters
+    const { page = 1, limit = 10, sortBy = "name", order = "asc", minPrice, maxPrice } = req.query;
+
+    // Convert page and limit to integers
+    const pageNumber = parseInt(page);
+    const pageSize = parseInt(limit);
+
+    // Validate pagination
+    if (isNaN(pageNumber) || isNaN(pageSize) || pageNumber < 1 || pageSize < 1) {
+      return reply.status(400).send({ message: "Invalid pagination parameters" });
+    }
+
+    // Sorting options
+    const validSortFields = ["name", "currentPrice", "createdAt"];
+    const sortField = validSortFields.includes(sortBy) ? sortBy : "name";
+    const sortOrder = order === "desc" ? "desc" : "asc";
+
+    // Filtering options
+    const priceFilter = {};
+    if (minPrice) priceFilter.currentPrice = { gte: parseFloat(minPrice) };
+    if (maxPrice) priceFilter.currentPrice = { ...priceFilter.currentPrice, lte: parseFloat(maxPrice) };
+
+    // Fetch products with filters, sorting, and pagination
+    const products = await prisma.product.findMany({
+      where: priceFilter,
+      orderBy: { [sortField]: sortOrder },
+      skip: (pageNumber - 1) * pageSize,
+      take: pageSize,
+    });
+
+    // Get total count for pagination metadata
+    const totalProducts = await prisma.product.count({ where: priceFilter });
+
+    logger.info(`Fetched ${products.length} products`);
+    reply.status(200).send({
+      data: products,
+      meta: {
+        total: totalProducts,
+        page: pageNumber,
+        limit: pageSize,
+        totalPages: Math.ceil(totalProducts / pageSize),
+      },
+    });
   } catch (error) {
-    logger.error(`Failed to fetch all products: ${"Error :",error}`);
+    logger.error(`Failed to fetch all products: ${error}`);
     reply.status(500).send({ message: "Failed to fetch products" });
   }
 };
