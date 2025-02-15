@@ -3,8 +3,8 @@ import { z } from "zod";
 export const productSchema = z.object({
   name: z.string().min(1, "Product name is required"),
   description: z.string().min(1, "Product description is required"),
+  category: z.string(),
   currentPrice: z.number().positive("Current price must be a positive number"),
-  previousPrice: z.number().optional(),
   stock: z.number().int().nonnegative("Stock must be a non-negative integer"),
   images: z.array(z.string().url("Invalid image URL")),
 });

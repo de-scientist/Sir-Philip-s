@@ -8,18 +8,14 @@ const prisma = new PrismaClient();
 export const createProduct = async (req, reply) => {
   try {
     const data = productSchema.parse(req.body);
-    const { categoryId } = req.params;
     logger.info(`Creating new product in category ${categoryId}`);
     const product = await prisma.product.create({
       data: {
         name: data.name,
         description: data.description,
-        currentPrice: data.currentPrice,
-        previousPrice: data.previousPrice,
+        currentPrice: data.price,
         stock: data.stock,
-        category: {
-          connect: { id: categoryId },
-        },
+        category: data.category
       },
       include: {
         category: true,
@@ -29,7 +25,7 @@ export const createProduct = async (req, reply) => {
     reply.status(201).send(product);
   } catch (error) {
     logger.error(`Failed to create product: ${"Error :",error}`);
-    reply.status(500).send({ message:" Failed to create a product." });
+    reply.status(500).send({ message:" Something went wrong" });
   }
 };
 
@@ -55,18 +51,31 @@ export const createMany = async(req, reply) => {
 
 export const getProducts = async (req, reply) => {
   try {
-    logger.info('Fetching all products');
-    const products = await prisma.product.findMany();
+    const limit = req.query.limit ? parseInt(req.query.limit, 10) : null;
+
+    logger.info(`Fetching products with limit: ${limit || "all"}`);
+
+    let products;
+    if (limit) {
+      products = await prisma.product.findMany({
+        take: limit,
+        orderBy: { id: "desc" }
+      });
+    } else {
+      products = await prisma.product.findMany({});
+    }
 
     logger.info(`Products found ${products}`);
     reply.status(200).send(products);
   } catch (error) {
     logger.error(`Failed to fetch all products: ${"Error :",error}`);
-    reply.status(500).send({ message: "Failed to fetch products" });
+    reply.status(500).send({ message: "Something went wrong" });
   }
 };
 
 export const getProductById = async (req, reply) => {
+
+  
   try {
     const productId = req.params.id
     logger.info('Fetching product');
@@ -143,7 +152,7 @@ export const filterProducts = async (req, reply) => {
 
 export const searchProducts = async (req, reply) => {
   try {
-    const { query } = searchSchema.parse(req.query);
+    const { query } = searchSchema.parse(req.query.key);
     logger.info('Fetching searched products');
 
     const products = await prisma.product.findMany({
@@ -164,7 +173,7 @@ export const searchProducts = async (req, reply) => {
     if (products.length === 0) {
       reply.status(404).send({ message: "No products found matching the search." });
     } else {
-      reply.status(200).send(products);
+      reply.status(200).send({data: products});
     }
     logger.info(`Successfully fetched ${products.length} products`);
     reply.status(200).send(products);

@@ -4,6 +4,7 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 export const validateRegistrationInput = async (req, reply) => {
+  console.log("first")
   const registerSchema = z.object({
     firstname: z.string().min(3, "Please enter a valid name."),
     lastname: z.string().min(3, "Please enter a valid name."),

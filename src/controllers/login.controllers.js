@@ -37,14 +37,15 @@ export const loginController = async (req, reply) => {
     const user = await prisma.user.findUnique({
       where: { email: data.email },
     });
-
+    
     if (!user) {
       logger.info(`Invalid login attempt for email: ${data.email}`);
-      return reply.status(400).send({ message: "Invalid email address" });
+      return reply.status(400).send({ message: "Incorrect login details" });
     }
-
+    
     const isPasswordValid = await bcrypt.compare(data.password, user.password);
-
+    
+    
     if (!isPasswordValid) {
       logger.info(`Invalid password attempt for email: ${data.email}`);
       return reply.status(400).send({ message: "Incorrect login details" });

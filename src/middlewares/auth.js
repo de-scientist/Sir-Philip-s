@@ -24,15 +24,16 @@ export const authenticateUser = async (request, reply) => {
     }
 
     try {
-      const decoded = await request.jwtVerify(accessToken);
+      console.log(request.jwtVerify)
+      const decoded = await request.server.jwt.verify(accessToken);
       request.user = decoded;
     } catch (err) {
-      logger.error(`Invalid token: ${error.message}`);
+      logger.error(`Invalid token: ${err.message}`);
       return reply.code(401).send({ message: "Invalid token, please login" });
     }
   } catch (err) {
-    logger.error(`Authentication Error: ${err.message}`);
-    return reply.code(500).send({ message: "Something went wrong" });
+    logger.error(`Authentication Error: ${err}`);
+    return reply.code(500).send({ message: "Something went wrong"});
   }
 };
 
