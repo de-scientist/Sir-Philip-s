@@ -1,14 +1,26 @@
 export const tokenBlacklist = new Set();
 
-// Middleware to check if the token is blacklisted
-export const checkTokenBlacklist = async (req, reply) => {
-  const token = req.cookies.token;
+export const validateToken = async (req, reply) => {
+  try {
+    const { token, refreshToken } = req.cookies;
+    
+    if (!token && !refreshToken) {
+      return reply.status(401).send({ error: "No active session found" });
+    }
 
-  if (!token) {
-    return reply.status(400).send({ error: "Token is missing" });
-  }
+    // Check if either token is blacklisted
+    if ((token && tokenBlacklist.has(token)) || 
+        (refreshToken && tokenBlacklist.has(refreshToken))) {
+      return reply.status(401).send({ error: "Session already invalidated" });
+    }
 
-  if (tokenBlacklist.has(token)) {
-    return reply.status(401).send({ error: "Token has been revoked" });
+    return true;
+  } catch (error) {
+    return reply.status(401).send({ error: "Authentication failed" });
   }
+};
+
+export const invalidateToken = (token) => {
+  tokenBlacklist.add(token);
+  return true;
 };

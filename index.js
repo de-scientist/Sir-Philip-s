@@ -3,6 +3,7 @@ import { config } from "./env.js"; // Import configurations from env.js
 import fastifyCookie from "@fastify/cookie";
 import fastifyJwt from "@fastify/jwt";
 import fastifyRateLimit from "@fastify/rate-limit";
+import fastifyCors from "@fastify/cors";
 import { registerRoutes } from "./src/routes/authRoutes/register.routes.js";
 import { loggingMiddleware } from "./src/middlewares/logging.middleware.js";
 import { loginRouter } from "./src/routes/authRoutes/login.routes.js";
@@ -13,6 +14,7 @@ import { orderRoutes } from "./src/routes/order.routes.js";
 import { reviewRoutes } from "./src/routes/review.routes.js";
 import { cartRoutes } from "./src/routes/cart.routes.js";
 import { variantRoutes } from "./src/routes/variation.routes.js";
+import { refreshTokenRoutes } from "./src/routes/authRoutes/refresh.routes.js";
 
 const server = Fastify({
   logger: {
@@ -25,7 +27,10 @@ const server = Fastify({
 // Register JWT
 server.register(fastifyJwt, {
   secret: config.JWT_SECRET,
-  sign: { algorithm: "HS256" },
+  sign: { 
+    algorithm: "HS256",
+    expiresIn: '60m' // Short-lived access tokens
+  },
   verify: { algorithms: ["HS256"] },
 });
 
@@ -33,25 +38,30 @@ server.register(fastifyJwt, {
 server.register(fastifyCookie, {
   secret: config.COOKIE_SECRET, // Encrypt signed cookies
   hook: "onRequest",
-  parseOptions: {
-    httpOnly: true, // Prevent JavaScript access
-    secure: config.NODE_ENV === "production", // Use secure cookies in production
-    sameSite: "Strict", // Prevent CSRF attacks
-  },
+  signed: true,
+  httpOnly: true, // Prevent JavaScript access
+  secure: config.NODE_ENV === "production", // Use secure cookies in production
+  sameSite: "strict", // Prevent CSRF attacks
 });
 
-// Register middleware
 server.addHook("preHandler", loggingMiddleware);
-server.addHook("preHandler", (req, reply, done) => {
-  reply.header("Access-Control-Allow-Origin", "*");
-  reply.header("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE");
-  reply.header("Access-Control-Allow-Headers", "*");
-  const isPreflight = /options/i.test(req.method);
-  if (isPreflight) {
-    return reply.send();
-  }
-  done();
+
+
+server.register(fastifyCors, {
+  origin: (origin, cb) => {
+    const allowedOrigins = ["http://localhost:5173", "https://your-production-domain.com"];
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      cb(null, true);
+      return;
+    }
+    cb(new Error("Not allowed by CORS"));
+  },
+  methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  exposedHeaders: ['Authorization'],
+  credentials: true,
 });
+
 
 // Register rate limiting
 server.register(fastifyRateLimit, {
@@ -72,6 +82,7 @@ orderRoutes(server);
 reviewRoutes(server);
 cartRoutes(server);
 variantRoutes(server);
+refreshTokenRoutes(server);
 
 const start = async () => {
   const HOST = config.NODE_ENV === "production" ? `0.0.0.0` : `localhost`;

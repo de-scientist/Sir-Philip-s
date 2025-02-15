@@ -5,7 +5,7 @@ export const logger = winston.createLogger({
   level: "info",
   format: winston.format.combine(
     winston.format.timestamp(),
-    winston.format.json()
+    winston.format.json() 
   ),
   transports: [
     new winston.transports.File({ filename: "error.log", level: "error" }),
@@ -24,10 +24,12 @@ if (process.env.NODE_ENV !== "production") {
   );
 }
 
-/**
- * Authentication Middleware
- * Extracts JWT from cookies instead of headers.
- */
+export const loggingMiddleware = (req, reply, next) => {
+  console.log(`${req.method} ${req.url}`);
+  next();
+};
+
+
 export const authMiddleware = async (req, reply, next) => {
   try {
     // ✅ Extract JWT from HTTP-only cookies

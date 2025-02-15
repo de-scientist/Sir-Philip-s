@@ -1,6 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import { z } from "zod";
-import bcrypt from "bcrypt";
+import bcrypt, { compareSync } from "bcrypt";
 import dotenv from "dotenv";
 import winston from "winston";
 
@@ -38,67 +38,81 @@ const prisma = new PrismaClient();
 
 export const loginController = async (req, reply) => {
   try {
-    const data = await loginSchema.parse(req.body);
+    const { email, password } = loginSchema.parse(req.body);
 
-    const user = await prisma.user.findUnique({
-      where: { email: data.email },
+    // Find user
+    const user = await prisma.user.findUnique({ 
+      where: { email },
+      select: {
+        userId: true,
+        email: true,
+        password: true,
+        firstname: true,
+        lastname: true,
+        role: true
+      }
     });
 
-    if (!user) {
-      logger.info(`Invalid login attempt for email: ${data.email}`);
-      return reply.status(400).send({ data: { message: "Invalid email address" } });
-    }
-
-    const isPasswordValid = await bcrypt.compare(data.password, user.password);
-    if (!isPasswordValid) {
-      logger.info(`Invalid password attempt for email: ${data.email}`);
-      return reply.status(400).send({ data: { message: "Invalid password" } });
-    }
-
-    // ✅ Generate Access & Refresh Tokens
-    const accessToken = req.server.jwt.sign(
-      { id: user.userId, role: user.role },
-      { expiresIn: "15m" }
-    );
-    const refreshToken = req.server.jwt.sign(
-      { id: user.userId },
-      { expiresIn: "7d" }
-    );
-
-    // ✅ Store Tokens in HTTP-only Cookies
-    reply
-      .setCookie("access_token", accessToken, {
-        httpOnly: true,
-        secure: process.env.NODE_ENV === "production",
-        sameSite: "strict",
-        path: "/",
-      })
-      .setCookie("refresh_token", refreshToken, {
-        httpOnly: true,
-        secure: process.env.NODE_ENV === "production",
-        sameSite: "strict",
-        path: "/",
-      })
-      .status(200)
-      .send({
-        user: {
-          id: user.userId,
-          firstname: user.firstname,
-          lastname: user.lastname,
-          email: user.email,
-          phoneNo: user.phoneNo,
-          role: user.role,
-          avatar: user.avatar,
-        },
+    if (!user || !compareSync(password, user.password)) {
+      return reply.status(401).send({
+        success: false,
+        error: "Invalid credentials"
       });
-  } catch (error) {
-    logger.error("Error:", error);
-    console.error("Error:", error);
-
-    if (error instanceof z.ZodError) {
-      return reply.status(400).send({ data: { message: "Invalid input", errors: error.errors } });
     }
 
-    reply.status(500).send({ data: { message: "An error occurred. Kindly refresh.", error: error.message } });
+    // Generate tokens
+    const accessToken = await reply.jwtSign(
+      { 
+        id: user.id, 
+        email: user.email,
+        role: user.role 
+      },
+      { expiresIn: '60m' }
+    );
+
+    const refreshToken = await reply.jwtSign(
+      { 
+        id: user.id, 
+        email: user.email,
+        role: user.role
+      },
+      { expiresIn: '28d' }
+    );
+
+    // Set cookies
+    reply.setCookie('token', accessToken, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'strict',
+      path: '/'
+    });
+
+    reply.setCookie('refreshToken', refreshToken, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'strict',
+      path: '/',
+      maxAge: 28 * 24 * 60 * 60 * 1000 // 28 days
+    });
+
+    // Return user data without sensitive information
+    return reply.send({
+      success: true,
+      message: "Login successful",
+      user: {
+        id: user.id,
+        email: user.email,
+        firstname: user.firstname,
+        lastname: user.lastname,
+        role: user.role
+      }
+    });
+
+  } catch (error) {
+    console.error('Login error:', error);
+    return reply.status(500).send({
+      success: false,
+      error: "Internal server error"
+    });
   }
 };

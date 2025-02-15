@@ -137,12 +137,12 @@ model Payment {
 }
 
 model Delivery {
-  id             String    @id @default(uuid())
+  id             String @id @default(uuid())
   address        String
   city           String
   deliveryStatus String
   trackNumber    String @default(cuid())
   deliveryMethod String
-  orderId        String    @unique
+  orderId        String @unique
   order          Order  @relation(fields: [orderId], references: [id])
 }

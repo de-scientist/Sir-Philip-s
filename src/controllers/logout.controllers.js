@@ -1,24 +1,37 @@
-import { tokenBlacklist } from "../middlewares/logout.middleware.js";
+import { invalidateToken } from '../middlewares/logout.middleware.js';
 
-export const logout = async (req, reply) => {
+export const logoutController = async (req, reply) => {
   try {
-    const accessToken = req.cookies.access_token;
-    const refreshToken = req.cookies.refresh_token;
-
-    if (!accessToken && !refreshToken) {
-      return reply.status(400).send({ error: "No active session found" });
-    }
-
-    // Add both tokens to the blacklist
-    if (accessToken) tokenBlacklist.add(accessToken);
-    if (refreshToken) tokenBlacklist.add(refreshToken);
+    const { token, refreshToken } = req.cookies;
+    
+    // Invalidate both tokens
+    if (token) invalidateToken(token);
+    if (refreshToken) invalidateToken(refreshToken);
 
     // Clear both cookies
-    reply.clearCookie("access_token");
-    reply.clearCookie("refresh_token");
+    reply.clearCookie('token', {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'strict',
+      path: '/'
+    });
 
-    return reply.status(200).send({ message: "Logout successful" });
+    reply.clearCookie('refreshToken', {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'strict',
+      path: '/'
+    });
+
+    return reply.send({
+      success: true,
+      message: "Logged out successfully, all sessions cleared"
+    });
   } catch (error) {
-    return reply.status(500).send({ error: error.message });
+    console.error('Logout error:', error);
+    return reply.status(500).send({
+      success: false,
+      error: "Error during logout"
+    });
   }
 };
