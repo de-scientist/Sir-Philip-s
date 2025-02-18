@@ -15,6 +15,8 @@ import { reviewRoutes } from "./src/routes/review.routes.js";
 import { cartRoutes } from "./src/routes/cart.routes.js";
 import { variantRoutes } from "./src/routes/variation.routes.js";
 import { refreshTokenRoutes } from "./src/routes/authRoutes/refresh.routes.js";
+import { userRoutes } from "./src/routes/users.routes.js";
+import { dashboardRoutes } from "./src/routes/dashboard.routes.js";
 
 const server = Fastify({
   logger: {
@@ -74,6 +76,7 @@ server.register(fastifyRateLimit, {
 
 // Register the routes
 registerRoutes(server);
+userRoutes(server);
 loginRouter(server);
 logoutRoutes(server);
 productRoutes(server);
@@ -83,6 +86,7 @@ reviewRoutes(server);
 cartRoutes(server);
 variantRoutes(server);
 refreshTokenRoutes(server);
+dashboardRoutes(server);
 
 const start = async () => {
   const HOST = config.NODE_ENV === "production" ? `0.0.0.0` : `localhost`;

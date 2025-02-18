@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import { logger } from "../middlewares/logging.middleware.js";
+import { logger } from "../utils/Logger.js";
 import { z, ZodError } from "zod";
 
 const reviewSchema = z.object({

@@ -1,24 +1,6 @@
 import pkg from "fastify";
 const { FastifyReply, FastifyRequest } = pkg;
-import winston from "winston";
-
-// Logger configuration
-const logger = winston.createLogger({
-  level: "info",
-  format: winston.format.json(),
-  transports: [
-    new winston.transports.File({ filename: "error.log", level: "error" }),
-    new winston.transports.File({ filename: "combined.log" }),
-  ],
-});
-
-if (process.env.NODE_ENV !== "production") {
-  logger.add(
-    new winston.transports.Console({
-      format: winston.format.simple(),
-    })
-  );
-}
+import { logger } from '../utils/logger.js';
 
 /**
  * Authentication Middleware
@@ -26,54 +8,76 @@ if (process.env.NODE_ENV !== "production") {
  * @param {FastifyReply} reply
  */
 export const authenticateUser = async (request, reply) => {
+  const token = request.cookies.token;
+  const refreshToken = request.cookies.refreshToken;
+
+  if (!token) {
+    logger.warn("Unauthorized access attempt: No token provided");
+    return reply.code(401).send({
+      error: "Unauthorized",
+      message: "Authentication token is missing",
+    });
+  }
+
   try {
-    // Extract tokens from cookies
-    const accessToken = request.cookies.access_token;
-    const refreshToken = request.cookies.refresh_token;
+    // Verify the access token
+    const decoded = await request.jwtVerify(token);
+    
+    // Attach user info to request object
+    request.user = {
+      userId: decoded.userId,
+      firstname: decoded.firstname,
+      lastname: decoded.lastname,
+      role: decoded.role,
+      email: decoded.email
+    };
+    
+    request.log.info(`User ${decoded.userId} authenticated successfully`);
+    return;
 
-    if (!accessToken) {
-      logger.warn("Unauthorized access attempt: No access token provided");
-      return reply.code(401).send({
-        error: "Unauthorized",
-        message: "Authentication token is missing",
-      });
-    }
-
-    try {
-      // Verify the access token
-      const decoded = await request.jwtVerify(accessToken);
-
-      // Attach user info to request object
-      request.user = {
-        id: decoded.id,
-        firstname: decoded.firstname,
-        lastname: decoded.lastname,
-        role: decoded.role,
-        email: decoded.email,
-      };
-
-      request.log.info(`User ${decoded.email} authenticated successfully`);
-    } catch (err) {
-      // If access token is expired, check for refresh token
-      if (refreshToken) {
-        request.log.warn(`Access token expired for ${request.user?.email}. Checking refresh token...`);
-        return reply.code(401).send({
-          error: "Unauthorized",
-          message: "Access token expired. Please refresh your session.",
+  } catch (err) {
+    // Handle token verification errors
+    if (err.code === 'FST_JWT_AUTHORIZATION_TOKEN_EXPIRED' && refreshToken) {
+      try {
+        // Verify refresh token
+        const decoded = await request.jwtVerify(refreshToken, { sign: { sub: 'refresh' } });
+        
+        // Generate new access token
+        const newToken = await reply.jwtSign(
+          { ...decoded, sub: 'access' },
+          { expiresIn: '1h' }
+        );
+        
+        // Set new access token in cookie
+        reply.setCookie('token', newToken, {
+          httpOnly: true,
+          secure: process.env.NODE_ENV === 'production',
+          sameSite: 'lax',
+          path: '/'
         });
-      } else {
-        logger.error(`Authentication failed: ${err.message}`);
+
+        // Update request.user
+        request.user = {
+          id: decoded.id,
+          firstname: decoded.firstname,
+          lastname: decoded.lastname,
+          role: decoded.role,
+          email: decoded.email
+        };
+        
+        return;
+      } catch (refreshErr) {
+        logger.error(`Refresh token validation failed: ${refreshErr.message}`);
         return reply.code(401).send({
-          error: "Unauthorized",
-          message: "Invalid or expired authentication token",
+          message: "Invalid refresh token. Please login again.",
         });
       }
     }
-  } catch (err) {
-    logger.error(`Authentication middleware error: ${err.message}`);
-    return reply.code(500).send({
-      error: "Internal Server Error",
-      message: "An error occurred during authentication.",
+
+    logger.error(`Authentication failed: ${err.message}`);
+    return reply.code(401).send({
+      error: "Unauthorized",
+      message: "Invalid or expired authentication token",
     });
   }
 };
@@ -87,7 +91,7 @@ export const authenticateUser = async (request, reply) => {
 export const isAdmin = async (request, reply) => {
   try {
     if (!request.user || request.user.role !== "admin") {
-      logger.warn(`Unauthorized admin access attempt by ${request.user?.email || "Unknown User"}`);
+      logger.warn(`Unauthorized admin access attempt by ${request.user?.email}`);
       return reply.code(403).send({
         error: "Forbidden",
         message: "Admin privileges required.",
@@ -108,6 +112,7 @@ export const isAdmin = async (request, reply) => {
  * @param {FastifyRequest} request
  * @param {FastifyReply} reply
  */
+
 export const isUser = async (request, reply) => {
   try {
     if (!request.user || request.user.role !== "user") {

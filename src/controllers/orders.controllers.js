@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { PrismaClient } from "@prisma/client";
-import { logger } from "../middlewares/logging.middleware.js";
+import { logger } from "../utils/Logger.js";
 
 const prisma = new PrismaClient();
 
@@ -23,7 +23,6 @@ export const createOrder = async (req, reply) => {
         logger.info(`Starting to create the order.`)
         const userId = req.user.id;
 
-        // First, verify all products exist and get their IDs
         const productsToOrder = await Promise.all(
             data.orderItems.map(async (item) => {
                 const product = await prisma.product.findUnique({
@@ -71,17 +70,17 @@ export const createOrder = async (req, reply) => {
 
 export const getOrders = async (req, reply) => {
   try {
-    // logger.info("Fetching all orders");
+    logger.info("Fetching all orders");
     const orders = await prisma.order.findMany({
       include: {
         orderItems: true,
       },
     });
 
-    // logger.info(`Fetched ${orders.length} orders`);
+    logger.info(`Fetched ${orders.length} orders`);
     reply.status(200).send(orders);
   } catch (error) {
-    // logger.error(`Failed to fetch orders: ${error.message}`);
+    logger.error(`Failed to fetch orders: ${error.message}`);
     reply.status(500).send({ error: error });
   }
 };

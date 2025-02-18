@@ -11,12 +11,6 @@ import {
 import { authenticateUser } from "../middlewares/auth.js";
 
 export const productRoutes = (server) => {
-  // server.post("/api/products", {
-  //   preHandler: [authenticateUser],
-  //   handler: createProduct,
-  // });
-
-  //Creats a product
   server.post("/api/categories/:categoryId/product", {
     preHandler: [authenticateUser],
     handler: createProduct,

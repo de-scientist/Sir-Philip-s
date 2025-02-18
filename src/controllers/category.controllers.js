@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { PrismaClient } from "@prisma/client";
-import { logger } from "../middlewares/logging.middleware.js";
+import  { logger } from "../utils/Logger.js";
 
 const categorySchema = z.object({
   name: z.string().min(3, "Category name is required"),
@@ -13,7 +13,7 @@ export const createCategory = async (req, reply) => {
   try {
     const data = categorySchema.parse(req.body);
     logger.info(`Creating a new category`)
-    //Match unique strings
+    
     const matchCategory = await prisma.category.findUnique({
       where: { name: data.name }
     });

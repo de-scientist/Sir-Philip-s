@@ -1,28 +1,10 @@
 import { PrismaClient } from "@prisma/client";
 import { z } from "zod";
-import bcrypt, { compareSync } from "bcrypt";
+import  { compareSync } from "bcrypt";
 import dotenv from "dotenv";
-import winston from "winston";
+import {logger} from "../utils/logger.js";
 
 dotenv.config();
-
-// Logger configuration
-const logger = winston.createLogger({
-  level: "info",
-  format: winston.format.json(),
-  transports: [
-    new winston.transports.File({ filename: "error.log", level: "error" }),
-    new winston.transports.File({ filename: "combined.log" }),
-  ],
-});
-
-if (process.env.NODE_ENV !== "production") {
-  logger.add(
-    new winston.transports.Console({
-      format: winston.format.simple(),
-    })
-  );
-}
 
 // Validation Schema
 const loginSchema = z.object({
@@ -40,7 +22,8 @@ export const loginController = async (req, reply) => {
   try {
     const { email, password } = loginSchema.parse(req.body);
 
-    // Find user
+    logger.info('Login attempt', { email });
+
     const user = await prisma.user.findUnique({ 
       where: { email },
       select: {
@@ -54,16 +37,23 @@ export const loginController = async (req, reply) => {
     });
 
     if (!user || !compareSync(password, user.password)) {
+      logger.warn('Failed login attempt', { email });
       return reply.status(401).send({
         success: false,
         error: "Invalid credentials"
       });
     }
 
+    logger.info('User logged in successfully', { 
+      userId: user.userId,
+      email: user.email,
+      role: user.role 
+    });
+
     // Generate tokens
     const accessToken = await reply.jwtSign(
       { 
-        id: user.id, 
+        userId: user.userId,
         email: user.email,
         role: user.role 
       },
@@ -72,7 +62,7 @@ export const loginController = async (req, reply) => {
 
     const refreshToken = await reply.jwtSign(
       { 
-        id: user.id, 
+        userId: user.userId,
         email: user.email,
         role: user.role
       },
@@ -95,12 +85,13 @@ export const loginController = async (req, reply) => {
       maxAge: 28 * 24 * 60 * 60 * 1000 // 28 days
     });
 
-    // Return user data without sensitive information
+    logger.debug('Tokens generated and cookies set', { userId: user.userId });
+
     return reply.send({
       success: true,
       message: "Login successful",
       user: {
-        id: user.id,
+        userId: user.userId,
         email: user.email,
         firstname: user.firstname,
         lastname: user.lastname,
@@ -109,6 +100,11 @@ export const loginController = async (req, reply) => {
     });
 
   } catch (error) {
+    logger.error('Login error occurred', { 
+      error: error.message,
+      stack: error.stack,
+      email: req.body?.email 
+    });
     console.error('Login error:', error);
     return reply.status(500).send({
       success: false,

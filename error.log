@@ -1,0 +1,63 @@
+{"email":"lennoxgithinji37@gmail.com","error":"ogger is not defined","level":"error","message":"Login error occurred","service":"sir-philip-service","stack":"ReferenceError: ogger is not defined\n    at Object.loginController (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/login.controllers.js:47:5)","timestamp":"2025-02-17 16:32:23"}
+{"email":"lennoxgithinji37@gmail.com","error":"ogger is not defined","level":"error","message":"Login error occurred","service":"sir-philip-service","stack":"ReferenceError: ogger is not defined\n    at Object.loginController (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/login.controllers.js:47:5)","timestamp":"2025-02-17 16:32:25"}
+{"email":"lennoxgithinji37@gmail.com","error":"ogger is not defined","level":"error","message":"Login error occurred","service":"sir-philip-service","stack":"ReferenceError: ogger is not defined\n    at Object.loginController (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/login.controllers.js:47:5)","timestamp":"2025-02-17 16:32:59"}
+{"email":"lennoxgithinji37@gmail.com","error":"ogger is not defined","level":"error","message":"Login error occurred","service":"sir-philip-service","stack":"ReferenceError: ogger is not defined\n    at Object.loginController (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/login.controllers.js:47:5)","timestamp":"2025-02-17 16:34:48"}
+{"email":"lennoxgithinji37@gmail.com","error":"ogger is not defined","level":"error","message":"Login error occurred","service":"sir-philip-service","stack":"ReferenceError: ogger is not defined\n    at Object.loginController (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/login.controllers.js:47:5)","timestamp":"2025-02-17 16:36:55"}
+{"email":"lennoxgithinji37@gmail.com","error":"ogger is not defined","level":"error","message":"Login error occurred","service":"sir-philip-service","stack":"ReferenceError: ogger is not defined\n    at Object.loginController (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/login.controllers.js:47:5)","timestamp":"2025-02-17 16:36:57"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 17:42:49"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:10:48"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:22:44"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:22:46"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:22:52"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:31:20"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:32:32"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:32:35"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:36:36"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:36:38"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:37:29"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:54:19"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:54:21"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:56:51"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 19:01:32"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 19:01:33"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 19:02:00"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 19:02:39"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 19:02:40"}
+{"level":"error","message":"Refresh token validation failed: next is not a function","service":"sir-philip-service","timestamp":"2025-02-18 00:25:08"}
+{"level":"error","message":"Failed to create product: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"array\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"images\"\n    ],\n    \"message\": \"Required\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-18 08:45:37"}
+{"level":"error","message":"Failed to create product: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"object\",\n    \"received\": \"array\",\n    \"path\": [],\n    \"message\": \"Expected object, received array\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-18 08:48:41"}
+{"level":"error","message":"Failed to create product: PrismaClientKnownRequestError: \nInvalid `prisma.product.createMany()` invocation:\n\n\nForeign key constraint violated: `Product_categoryId_fkey (index)`","service":"sir-philip-service","timestamp":"2025-02-18 08:51:38"}
+{"level":"error","message":"Failed to create product: PrismaClientKnownRequestError: \nInvalid `prisma.product.createMany()` invocation:\n\n\nForeign key constraint violated: `Product_categoryId_fkey (index)`","service":"sir-philip-service","timestamp":"2025-02-18 08:52:18"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 16:55:52"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 16:55:54"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 16:55:55"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 16:56:00"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:03:57"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:03:58"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:03:59"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:39:52"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:39:53"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:39:54"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:41:59"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:43:58"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:44:00"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:44:01"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:45:54"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:45:55"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:49:10"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:49:11"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:49:51"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:55:31"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:55:32"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:55:36"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:55:37"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:55:39"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 18:52:38"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 18:53:34"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 19:15:00"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 19:15:00"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 19:15:06"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 19:15:06"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 19:15:52"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 19:16:12"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 19:16:12"}

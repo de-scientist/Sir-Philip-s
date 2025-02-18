@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { PrismaClient } from "@prisma/client";
-import { logger } from "../middlewares/logging.middleware.js";
+import { logger } from "../utils/Logger.js";
 import { productSchema, filterSchema, searchSchema, productsSchema } from "../middlewares/product.middleware.js";
 
 const prisma = new PrismaClient();
@@ -29,7 +29,8 @@ export const createProduct = async (req, reply) => {
     reply.status(201).send(product);
   } catch (error) {
     logger.error(`Failed to create product: ${"Error :",error}`);
-    reply.status(500).send({ message:" Failed to create a product." });
+    // reply.status(500).send({ message:" Failed to create a product." });
+    reply.status(500).send(error);
   }
 };
 
@@ -49,7 +50,8 @@ export const createMany = async(req, reply) => {
     reply.status(200).send({count: products.count})
   }catch(error){
     logger.error(`Failed to create product: ${"Error :",error}`);
-    reply.status(500).send({message: "Failed to create products."})
+    // reply.status(500).send({message: "Failed to create products."})
+    reply.status(500).send(error)
   }
 }
 
@@ -58,7 +60,7 @@ export const getProducts = async (req, reply) => {
     logger.info('Fetching all products');
 
     // Extract query parameters
-    const { page = 1, limit = 10, sortBy = "name", order = "asc", minPrice, maxPrice } = req.query;
+    const { page = 1, limit = 50, sortBy = "name", order = "asc", minPrice, maxPrice } = req.query;
 
     // Convert page and limit to integers
     const pageNumber = parseInt(page);
@@ -82,6 +84,9 @@ export const getProducts = async (req, reply) => {
     // Fetch products with filters, sorting, and pagination
     const products = await prisma.product.findMany({
       where: priceFilter,
+      include: {
+        category: true
+      },
       orderBy: { [sortField]: sortOrder },
       skip: (pageNumber - 1) * pageSize,
       take: pageSize,

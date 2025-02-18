@@ -30,9 +30,3 @@ export const validateCategoryInput = async (req, reply) => {
     return reply.status(400).send({ message: "Name and description are required" });
   }
 };
-
-// Middleware to log category-specific requests
-export const categoryLoggingMiddleware = (req, reply) => {
-  console.log(`Category ${req.method} request to ${req.url}`);
-  // No need for next(), Fastify handles async flow automatically
-};

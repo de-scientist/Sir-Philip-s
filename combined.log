@@ -1,0 +1,328 @@
+{"level":"warn","message":"Unauthorized access attempt: No access token provided"}
+{"level":"warn","message":"Unauthorized access attempt: No access token provided"}
+{"level":"warn","message":"Unauthorized access attempt: No access token provided"}
+{"level":"warn","message":"Unauthorized access attempt: No access token provided"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-17 16:24:23"}
+{"level":"info","message":"Fetched 0 products","service":"sir-philip-service","timestamp":"2025-02-17 16:24:23"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 16:32:22"}
+{"email":"lennoxgithinji37@gmail.com","error":"ogger is not defined","level":"error","message":"Login error occurred","service":"sir-philip-service","stack":"ReferenceError: ogger is not defined\n    at Object.loginController (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/login.controllers.js:47:5)","timestamp":"2025-02-17 16:32:23"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 16:32:25"}
+{"email":"lennoxgithinji37@gmail.com","error":"ogger is not defined","level":"error","message":"Login error occurred","service":"sir-philip-service","stack":"ReferenceError: ogger is not defined\n    at Object.loginController (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/login.controllers.js:47:5)","timestamp":"2025-02-17 16:32:25"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 16:32:59"}
+{"email":"lennoxgithinji37@gmail.com","error":"ogger is not defined","level":"error","message":"Login error occurred","service":"sir-philip-service","stack":"ReferenceError: ogger is not defined\n    at Object.loginController (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/login.controllers.js:47:5)","timestamp":"2025-02-17 16:32:59"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 16:34:48"}
+{"email":"lennoxgithinji37@gmail.com","error":"ogger is not defined","level":"error","message":"Login error occurred","service":"sir-philip-service","stack":"ReferenceError: ogger is not defined\n    at Object.loginController (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/login.controllers.js:47:5)","timestamp":"2025-02-17 16:34:48"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 16:36:55"}
+{"email":"lennoxgithinji37@gmail.com","error":"ogger is not defined","level":"error","message":"Login error occurred","service":"sir-philip-service","stack":"ReferenceError: ogger is not defined\n    at Object.loginController (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/login.controllers.js:47:5)","timestamp":"2025-02-17 16:36:55"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 16:36:57"}
+{"email":"lennoxgithinji37@gmail.com","error":"ogger is not defined","level":"error","message":"Login error occurred","service":"sir-philip-service","stack":"ReferenceError: ogger is not defined\n    at Object.loginController (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/login.controllers.js:47:5)","timestamp":"2025-02-17 16:36:57"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 16:37:38"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-17 16:37:39","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 16:58:51"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-17 16:58:51","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 17:15:52"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-17 17:15:52","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 17:42:08"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-17 17:42:08","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 17:42:49"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 17:43:30"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-17 17:43:30","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:10:48"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 18:11:32"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-17 18:11:32","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:22:44"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:22:46"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:22:52"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:31:20"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 18:31:57"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-17 18:31:57","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:32:32"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:32:35"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 18:36:07"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-17 18:36:07","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:36:36"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:36:38"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:37:29"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 18:41:27"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-17 18:41:28","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:54:19"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:54:21"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 18:56:51"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 18:57:06"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-17 18:57:06","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 18:57:08"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-17 18:57:08","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 18:59:32"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-17 18:59:32","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 18:59:34"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-17 18:59:34","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-17 19:00:23"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-17 19:00:24","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 19:01:32"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 19:01:33"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 19:02:00"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 19:02:39"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-17 19:02:40"}
+{"level":"error","message":"Refresh token validation failed: next is not a function","service":"sir-philip-service","timestamp":"2025-02-18 00:25:08"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-18 00:25:18"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-18 00:25:18","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-18 00:37:48"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-18 00:37:49","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 00:37:53"}
+{"level":"info","message":"Fetched 0 products","service":"sir-philip-service","timestamp":"2025-02-18 00:37:53"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 00:38:27"}
+{"level":"info","message":"Fetched 0 products","service":"sir-philip-service","timestamp":"2025-02-18 00:38:27"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 08:19:50"}
+{"level":"info","message":"Fetched 0 products","service":"sir-philip-service","timestamp":"2025-02-18 08:19:50"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 08:20:23"}
+{"level":"info","message":"Fetched 0 products","service":"sir-philip-service","timestamp":"2025-02-18 08:20:23"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-18 08:25:53"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-18 08:25:54","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"Creating a new category","service":"sir-philip-service","timestamp":"2025-02-18 08:32:34"}
+{"level":"info","message":"Successfuly created the category: 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-18 08:32:34"}
+{"level":"info","message":"Creating a new category","service":"sir-philip-service","timestamp":"2025-02-18 08:32:57"}
+{"level":"info","message":"Successfuly created the category: 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-18 08:32:57"}
+{"level":"info","message":"Creating a new category","service":"sir-philip-service","timestamp":"2025-02-18 08:33:24"}
+{"level":"info","message":"Successfuly created the category: b6c31a3b-d5ce-4272-af16-faa89634a67b","service":"sir-philip-service","timestamp":"2025-02-18 08:33:24"}
+{"level":"info","message":"Creating a new category","service":"sir-philip-service","timestamp":"2025-02-18 08:33:36"}
+{"level":"info","message":"Successfuly created the category: 9b73a6de-f0cd-46ae-ae2b-78fdbc63ebbb","service":"sir-philip-service","timestamp":"2025-02-18 08:33:36"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 08:35:32"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 08:35:32"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 08:36:24"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 08:36:24"}
+{"level":"info","message":"Fetching the category with categoryId: 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-18 08:36:38"}
+{"level":"info","message":"Successfully found the category 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-18 08:36:38"}
+{"level":"info","message":"Fetching the category with categoryId: 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-18 08:38:33"}
+{"level":"info","message":"Successfully found the category 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-18 08:38:33"}
+{"level":"info","message":"Fetching the category with categoryId: 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-18 08:38:37"}
+{"level":"info","message":"Successfully found the category 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-18 08:38:37"}
+{"level":"info","message":"Updating category 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-18 08:38:43"}
+{"level":"info","message":"Successfully updated category: 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-18 08:38:43"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 08:40:58"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 08:40:58"}
+{"level":"error","message":"Failed to create product: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"array\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"images\"\n    ],\n    \"message\": \"Required\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-18 08:45:37"}
+{"level":"info","message":"Creating new product in category 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-18 08:46:28"}
+{"level":"info","message":"Product created successfully with ID: 74bda866-c88f-4266-a2f4-ee2a95440cd4","service":"sir-philip-service","timestamp":"2025-02-18 08:46:28"}
+{"level":"error","message":"Failed to create product: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"object\",\n    \"received\": \"array\",\n    \"path\": [],\n    \"message\": \"Expected object, received array\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-18 08:48:41"}
+{"level":"info","message":"Creating new products in category :categoryId","service":"sir-philip-service","timestamp":"2025-02-18 08:51:38"}
+{"level":"error","message":"Failed to create product: PrismaClientKnownRequestError: \nInvalid `prisma.product.createMany()` invocation:\n\n\nForeign key constraint violated: `Product_categoryId_fkey (index)`","service":"sir-philip-service","timestamp":"2025-02-18 08:51:38"}
+{"level":"info","message":"Creating new products in category :categoryId","service":"sir-philip-service","timestamp":"2025-02-18 08:52:18"}
+{"level":"error","message":"Failed to create product: PrismaClientKnownRequestError: \nInvalid `prisma.product.createMany()` invocation:\n\n\nForeign key constraint violated: `Product_categoryId_fkey (index)`","service":"sir-philip-service","timestamp":"2025-02-18 08:52:18"}
+{"level":"info","message":"Creating new products in category b6c31a3b-d5ce-4272-af16-faa89634a67b","service":"sir-philip-service","timestamp":"2025-02-18 08:53:10"}
+{"level":"info","message":"Products created successfully with IDs: b6c31a3b-d5ce-4272-af16-faa89634a67b","service":"sir-philip-service","timestamp":"2025-02-18 08:53:10"}
+{"level":"info","message":"Creating new products in category 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-18 08:54:38"}
+{"level":"info","message":"Products created successfully with IDs: 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-18 08:54:38"}
+{"level":"info","message":"Creating new product in category 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-18 08:55:05"}
+{"level":"info","message":"Product created successfully with ID: 3775dc52-d35d-43ac-95b4-9d92e9e3fe47","service":"sir-philip-service","timestamp":"2025-02-18 08:55:05"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 08:56:04"}
+{"level":"info","message":"Fetched 10 products","service":"sir-philip-service","timestamp":"2025-02-18 08:56:04"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 08:57:27"}
+{"level":"info","message":"Fetched 10 products","service":"sir-philip-service","timestamp":"2025-02-18 08:57:27"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 08:57:41"}
+{"level":"info","message":"Fetched 10 products","service":"sir-philip-service","timestamp":"2025-02-18 08:57:41"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:10:06"}
+{"level":"info","message":"Fetched 10 products","service":"sir-philip-service","timestamp":"2025-02-18 09:10:07"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:11:17"}
+{"level":"info","message":"Fetched 10 products","service":"sir-philip-service","timestamp":"2025-02-18 09:11:18"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 09:13:33"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 09:13:33"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:14:43"}
+{"level":"info","message":"Fetched 10 products","service":"sir-philip-service","timestamp":"2025-02-18 09:14:43"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:16:26"}
+{"level":"info","message":"Fetched 10 products","service":"sir-philip-service","timestamp":"2025-02-18 09:16:26"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:17:23"}
+{"level":"info","message":"Fetched 10 products","service":"sir-philip-service","timestamp":"2025-02-18 09:17:23"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:20:39"}
+{"level":"info","message":"Fetched 10 products","service":"sir-philip-service","timestamp":"2025-02-18 09:20:39"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:21:53"}
+{"level":"info","message":"Fetched 10 products","service":"sir-philip-service","timestamp":"2025-02-18 09:21:53"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:24:07"}
+{"level":"info","message":"Fetched 10 products","service":"sir-philip-service","timestamp":"2025-02-18 09:24:07"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:24:38"}
+{"level":"info","message":"Fetched 10 products","service":"sir-philip-service","timestamp":"2025-02-18 09:24:38"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:25:36"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 09:25:36"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:25:53"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 09:25:53"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:29:13"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 09:29:14"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:29:52"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 09:29:53"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:29:54"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 09:29:54"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 09:31:45"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 09:31:46"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 14:48:14"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 14:48:15"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 14:51:34"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 14:51:34"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 14:53:08"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 14:53:08"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 14:54:59"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 14:55:00"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 14:57:22"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 14:57:23"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 15:00:20"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 15:00:21"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 15:04:18"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 15:04:18"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 15:07:49"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 15:07:49"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 15:07:54"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 15:07:55"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 15:24:49"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 15:24:49"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 15:25:29"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 15:25:29"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 15:36:28"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 15:36:29"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 15:43:00"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 15:43:00"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 15:46:44"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 15:46:44"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 15:56:26"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 15:56:27"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 15:59:41"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 15:59:41"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 16:03:00"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 16:03:00"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 16:14:47"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 16:14:48"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 16:14:48"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 16:14:49"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 16:30:49"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 16:30:49"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 16:31:44"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 16:31:45"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 16:31:46"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 16:31:46"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 16:43:36"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 16:43:36"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 16:51:32"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 16:51:33"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 16:55:32"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 16:55:32"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 16:55:52"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 16:55:54"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 16:55:55"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 16:56:00"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:03:57"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:03:58"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:03:59"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 17:36:01"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 17:36:02"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-18 17:36:22"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-18 17:36:23","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 17:39:07"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 17:39:07"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 17:39:30"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 17:39:30"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:39:52"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:39:53"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:39:54"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:41:59"}
+{"level":"info","message":"Fetching the category with categoryId: 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-18 17:42:19"}
+{"level":"info","message":"Successfully found the category 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-18 17:42:19"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:43:58"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:44:00"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:44:01"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 17:45:19"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 17:45:19"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:45:54"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:45:55"}
+{"level":"warn","message":"Unauthorized admin access attempt by undefined","service":"sir-philip-service","timestamp":"2025-02-18 17:47:57"}
+{"level":"warn","message":"Unauthorized admin access attempt by undefined","service":"sir-philip-service","timestamp":"2025-02-18 17:47:59"}
+{"level":"warn","message":"Unauthorized admin access attempt by undefined","service":"sir-philip-service","timestamp":"2025-02-18 17:48:00"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:49:10"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:49:11"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:49:51"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:55:31"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:55:32"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:55:36"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:55:37"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 17:55:39"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-18 18:44:26"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-18 18:44:27","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-18 18:44:32"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-18 18:44:32","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-18 18:50:32"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-18 18:50:33","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 18:50:40"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 18:50:40"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 18:50:45"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 18:50:45"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 18:52:38"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-18 18:52:57"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-18 18:52:57","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 18:53:00"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 18:53:00"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 18:53:02"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 18:53:02"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 18:53:34"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-18 18:54:52"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-18 18:54:52","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 18:54:57"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 18:54:57"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 18:55:00"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 18:55:00"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 19:02:32"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 19:02:33"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 19:02:39"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 19:02:39"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 19:06:40"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 19:06:40"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 19:09:55"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 19:09:56"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 19:14:56"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 19:14:56"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 19:15:00"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 19:15:00"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 19:15:05"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 19:15:05"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 19:15:06"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 19:15:06"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 19:15:52"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-18 19:16:11"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-18 19:16:12","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 19:16:12"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-18 19:16:12"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 19:16:56"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 19:16:57"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 19:20:14"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 19:20:14"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 19:20:14"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 19:20:14"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 19:26:31"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 19:26:32"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 19:39:09"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 19:39:10"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 19:39:11"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 19:39:11"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-18 21:31:18"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-18 21:31:18","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 21:31:25"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 21:31:26"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-18 21:31:29"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-18 21:31:30"}
+{"email":"johndoe@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-18 21:33:21"}
+{"email":"johndoe@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-18 21:33:21","userId":"29e532b1-1dcf-4a03-b281-735c2b36ffca"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 21:34:12"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 21:34:12"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 21:42:57"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 21:42:58"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 21:47:11"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 21:47:11"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 21:47:52"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 21:47:52"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 21:48:47"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 21:48:47"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 21:49:37"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 21:49:37"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 21:56:20"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 21:56:20"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 21:59:16"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 21:59:16"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-18 22:00:59"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 22:00:59"}
+{"email":"johndoe@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-18 22:07:19"}
+{"email":"johndoe@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-18 22:07:19","userId":"29e532b1-1dcf-4a03-b281-735c2b36ffca"}
