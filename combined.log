@@ -326,3 +326,570 @@
 {"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-18 22:00:59"}
 {"email":"johndoe@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-18 22:07:19"}
 {"email":"johndoe@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-18 22:07:19","userId":"29e532b1-1dcf-4a03-b281-735c2b36ffca"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 00:55:25"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 00:55:26"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 00:58:36"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 00:58:36"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 01:03:03"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 01:03:03"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 01:06:41"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 01:06:41"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 01:07:10"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 01:07:10","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-20 01:09:51"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-20 01:10:07"}
+{"level":"error","message":"Refresh token validation failed: next is not a function","service":"sir-philip-service","timestamp":"2025-02-20 01:12:12"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 01:12:22"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 01:12:23","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"User profile updated successfully","service":"sir-philip-service","timestamp":"2025-02-20 01:22:42","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"User profile updated successfully","service":"sir-philip-service","timestamp":"2025-02-20 01:22:56","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-20 01:29:18"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 01:30:34"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 01:30:34"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 01:31:27"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-20 01:31:27","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-20 01:31:45"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-20 01:32:03"}
+{"email":"mary@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 07:39:52"}
+{"email":"mary@gmail.com","level":"warn","message":"Failed login attempt","service":"sir-philip-service","timestamp":"2025-02-20 07:39:52"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 07:39:58"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-20 07:39:59","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 07:39:59"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-20 07:39:59","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 08:10:37"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 08:10:38","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 08:10:39"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 08:10:39","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 08:11:04"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 08:11:04","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 08:20:04"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 08:20:05","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 08:20:06"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 08:20:07","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 08:32:45"}
+{"email":"wanja@gmail.com","level":"warn","message":"Failed login attempt","service":"sir-philip-service","timestamp":"2025-02-20 08:32:46"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 08:34:26"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 08:34:26","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 08:34:32"}
+{"email":"wanja@gmail.com","level":"warn","message":"Failed login attempt","service":"sir-philip-service","timestamp":"2025-02-20 08:34:32"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 14:13:54"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 14:13:55","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 14:40:44"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 14:40:44"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 14:53:06"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 14:53:06"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 14:54:28"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 14:54:28"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 14:54:57"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 14:54:58","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 14:54:58"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 14:54:58"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 14:54:58"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 14:54:58"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:05:15"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:05:15"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:05:15"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:05:15"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-20 15:08:33"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-20 15:08:49"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:09:48"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:09:48"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-20 15:09:49"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-20 15:09:50"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-20 15:09:51"}
+{"level":"info","message":"Updating category 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-20 15:10:13"}
+{"level":"info","message":"Successfully updated category: 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-20 15:10:13"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:11:12"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:11:12"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 15:11:47"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 15:11:48","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 15:11:48"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 15:11:49"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 15:11:49"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 15:11:49"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 15:12:01"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 15:12:01"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:12:06"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:12:06"}
+{"level":"info","message":"Updating category 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-20 15:14:02"}
+{"level":"info","message":"Successfully updated category: 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-20 15:14:02"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:14:02"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:14:02"}
+{"level":"info","message":"Updating category 9b73a6de-f0cd-46ae-ae2b-78fdbc63ebbb","service":"sir-philip-service","timestamp":"2025-02-20 15:15:50"}
+{"level":"info","message":"Successfully updated category: 9b73a6de-f0cd-46ae-ae2b-78fdbc63ebbb","service":"sir-philip-service","timestamp":"2025-02-20 15:15:50"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:15:50"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:15:50"}
+{"level":"info","message":"Updating category b6c31a3b-d5ce-4272-af16-faa89634a67b","service":"sir-philip-service","timestamp":"2025-02-20 15:17:15"}
+{"level":"info","message":"Successfully updated category: b6c31a3b-d5ce-4272-af16-faa89634a67b","service":"sir-philip-service","timestamp":"2025-02-20 15:17:15"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:17:15"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:17:16"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:17:23"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:17:23"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:20:49"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:20:49"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:24:25"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:24:25"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:31:33"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:31:34"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:32:44"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:32:44"}
+{"level":"info","message":"Fetching the category with categoryId: 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-20 15:33:02"}
+{"level":"info","message":"Successfully found the category 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-20 15:33:02"}
+{"level":"info","message":"Fetching the category with categoryId: 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-20 15:34:24"}
+{"level":"info","message":"Failed to fetch the catgory: PrismaClientValidationError: \nInvalid `prisma.category.findUnique()` invocation:\n\n{\n  where: {\n    id: \"436e56bc-8dae-4fbe-84f9-79b68a856621\"\n  },\n  select: {\n  ~~~~~~\n    id: true,\n    name: true,\n    image: true,\n    description: true\n  },\n  include: {\n  ~~~~~~~\n    products: {\n      select: {\n        id: true,\n        name: true,\n        description: true,\n        currentPrice: true,\n        stock: true,\n        images: true\n      }\n    }\n  }\n}\n\nPlease either use `include` or `select`, but not both at the same time.","service":"sir-philip-service","timestamp":"2025-02-20 15:34:24"}
+{"level":"info","message":"Fetching the category with categoryId: 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-20 15:34:32"}
+{"level":"info","message":"Failed to fetch the catgory: PrismaClientValidationError: \nInvalid `prisma.category.findUnique()` invocation:\n\n{\n  where: {\n    id: \"436e56bc-8dae-4fbe-84f9-79b68a856621\"\n  },\n  select: {\n  ~~~~~~\n    id: true,\n    name: true,\n    image: true,\n    description: true\n  },\n  include: {\n  ~~~~~~~\n    products: {\n      select: {\n        id: true,\n        name: true,\n        description: true,\n        currentPrice: true,\n        stock: true,\n        images: true\n      }\n    }\n  }\n}\n\nPlease either use `include` or `select`, but not both at the same time.","service":"sir-philip-service","timestamp":"2025-02-20 15:34:32"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:34:38"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:34:38"}
+{"level":"info","message":"Fetching the category with categoryId: 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-20 15:35:08"}
+{"level":"info","message":"Failed to fetch the catgory: PrismaClientValidationError: \nInvalid `prisma.category.findUnique()` invocation:\n\n{\n  where: {\n    id: \"436e56bc-8dae-4fbe-84f9-79b68a856621\"\n  },\n  select: {\n  ~~~~~~\n    id: true,\n    name: true,\n    image: true,\n    description: true\n  },\n  include: {\n  ~~~~~~~\n    products: {\n      select: {\n        id: true,\n        name: true,\n        description: true,\n        currentPrice: true,\n        stock: true,\n        images: true\n      }\n    }\n  }\n}\n\nPlease either use `include` or `select`, but not both at the same time.","service":"sir-philip-service","timestamp":"2025-02-20 15:35:09"}
+{"level":"info","message":"Fetching the category with categoryId: 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-20 15:36:34"}
+{"level":"info","message":"Failed to fetch the catgory: PrismaClientValidationError: \nInvalid `prisma.category.findUnique()` invocation:\n\n{\n  where: {\n    id: \"436e56bc-8dae-4fbe-84f9-79b68a856621\"\n  },\n  select: {\n    id: true,\n    name: true,\n    image: true,\n    description: true\n  },\n  products: {\n  ~~~~~~~~\n    select: {\n      id: true,\n      name: true,\n      description: true,\n      currentPrice: true,\n      stock: true,\n      images: true\n    }\n  }\n}\n\nUnknown argument `products`. Available options are marked with ?.","service":"sir-philip-service","timestamp":"2025-02-20 15:36:34"}
+{"level":"info","message":"Fetching the category with categoryId: 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-20 15:37:57"}
+{"level":"info","message":"Failed to fetch the catgory: PrismaClientValidationError: \nInvalid `prisma.category.findUnique()` invocation:\n\n{\n  where: {\n    id: \"436e56bc-8dae-4fbe-84f9-79b68a856621\"\n  },\n  include: {\n    id: true,\n    ~~\n    name: true,\n    image: true,\n    description: true,\n    products: {\n      select: {\n        id: true,\n        name: true,\n        description: true,\n        currentPrice: true,\n        stock: true,\n        images: true\n      }\n    },\n?   products?: true\n  }\n}\n\nInvalid scalar field `id` for include statement on model Category. Available options are marked with ?.\nNote that include statements only accept relation fields.","service":"sir-philip-service","timestamp":"2025-02-20 15:37:57"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:37:59"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:38:00"}
+{"level":"info","message":"Fetching the category with categoryId: 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-20 15:39:32"}
+{"level":"info","message":"Successfully found the category 436e56bc-8dae-4fbe-84f9-79b68a856621","service":"sir-philip-service","timestamp":"2025-02-20 15:39:32"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:41:56"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:41:56"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:48:36"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:48:36"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 15:48:38"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 15:48:39"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 15:48:39"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 15:48:39"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 15:48:46"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 15:48:46"}
+{"level":"info","message":"Fetching the category with categoryId: 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-20 15:57:36"}
+{"level":"info","message":"Successfully found the category 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-20 15:57:37"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 16:08:33"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 16:08:33"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 16:09:13"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 16:09:13"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 16:12:27"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 16:12:27"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 16:15:23"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 16:15:23"}
+{"level":"info","message":"Fetching the category with categoryId: 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-20 16:16:55"}
+{"level":"info","message":"Successfully found the category 55dec527-ce8a-440e-98ae-02d44a57baad","service":"sir-philip-service","timestamp":"2025-02-20 16:16:55"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 16:44:42"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 16:44:43"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 16:45:19"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 16:45:20","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 16:45:20"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 16:45:21"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 16:45:21"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 16:45:21"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 16:45:25"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 16:45:26"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 16:45:33"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 16:45:33"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 16:45:33"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 16:45:33"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 16:45:35"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 16:45:35"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-20 16:46:32"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-20 16:46:40"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 17:00:44"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 17:00:44"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-20 19:25:39"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-20 19:25:42"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 19:34:54"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 19:34:54"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 19:48:27"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 19:48:27"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 20:00:25"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 20:00:26"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 20:10:59"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 20:11:00"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 20:31:00"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 20:31:01"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 20:31:01"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 20:31:01"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 20:31:08"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 20:31:08"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 20:31:09"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 20:31:10"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 20:32:48"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 20:32:48"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 20:34:07"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-20 20:34:07","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 20:51:08"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 20:51:08"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 20:58:01"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 20:58:01"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 20:58:09"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 20:58:09"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 20:58:09"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 20:58:09"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 21:07:44"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 21:07:44"}
+{"level":"error","message":"Refresh token validation failed: next is not a function","service":"sir-philip-service","timestamp":"2025-02-20 21:09:50"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 21:10:02"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 21:10:02","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"error","message":"Refresh token validation failed: next is not a function","service":"sir-philip-service","timestamp":"2025-02-20 21:10:22"}
+{"level":"info","message":"Fetching all orders","service":"sir-philip-service","timestamp":"2025-02-20 21:11:05"}
+{"level":"info","message":"Fetched 0 orders","service":"sir-philip-service","timestamp":"2025-02-20 21:11:05"}
+{"level":"info","message":"Failed to create the order: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"string\",\n    \"path\": [\n      \"totalAmount\"\n    ],\n    \"message\": \"Expected number, received string\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-20 21:12:16"}
+{"level":"info","message":"Failed to create the order: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"string\",\n    \"path\": [\n      \"totalAmount\"\n    ],\n    \"message\": \"Expected number, received string\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-20 21:12:16"}
+{"level":"info","message":"Failed to create the order: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"string\",\n    \"path\": [\n      \"totalAmount\"\n    ],\n    \"message\": \"Expected number, received string\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-20 21:13:37"}
+{"level":"info","message":"Failed to create the order: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"string\",\n    \"path\": [\n      \"totalAmount\"\n    ],\n    \"message\": \"Expected number, received string\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-20 21:13:37"}
+{"level":"info","message":"Failed to create the order: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"string\",\n    \"path\": [\n      \"totalAmount\"\n    ],\n    \"message\": \"Expected number, received string\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-20 21:14:54"}
+{"level":"info","message":"Failed to create the order: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"string\",\n    \"path\": [\n      \"totalAmount\"\n    ],\n    \"message\": \"Expected number, received string\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-20 21:14:54"}
+{"level":"info","message":"Failed to create the order: ReferenceError: user is not defined","service":"sir-philip-service","timestamp":"2025-02-20 21:15:05"}
+{"level":"info","message":"Failed to create the order: ReferenceError: user is not defined","service":"sir-philip-service","timestamp":"2025-02-20 21:15:37"}
+{"level":"info","message":"Failed to create the order: ReferenceError: user is not defined","service":"sir-philip-service","timestamp":"2025-02-20 21:16:31"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 21:18:11"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 21:18:12","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"Starting to create the order","service":"sir-philip-service","timestamp":"2025-02-20 21:18:45"}
+{"level":"info","message":"Failed to create the order: PrismaClientValidationError: \nInvalid `prisma.order.create()` invocation:\n\n{\n  data: {\n    userId: undefined,\n    totalAmount: 500,\n    status: \"pending\",\n    orderItems: {\n      create: [\n        {\n          productId: \"07537d9b-6586-4ab9-b2ee-ec89c6977396\",\n          quantity: 3\n        },\n        {\n          productId: \"cfe251a6-b6af-4c42-b912-a450941591fc\",\n          quantity: 1\n        },\n        {\n          productId: \"594c336e-5de0-42c5-a34d-8333db987977\",\n          quantity: 5\n        },\n        {\n          productId: \"0c73a4fc-b781-45fd-920e-eb3813032872\",\n          quantity: 3\n        }\n      ]\n    },\n+   user: {\n+     create: UserCreateWithoutOrdersInput | UserUncheckedCreateWithoutOrdersInput,\n+     connectOrCreate: UserCreateOrConnectWithoutOrdersInput,\n+     connect: UserWhereUniqueInput\n+   }\n  },\n  include: {\n    orderItems: true\n  }\n}\n\nArgument `user` is missing.","service":"sir-philip-service","timestamp":"2025-02-20 21:18:45"}
+{"level":"info","message":"Starting to create the order","service":"sir-philip-service","timestamp":"2025-02-20 21:20:05"}
+{"level":"info","message":"Succefully created the order: 1e75e3ea-500f-4e06-8647-cdebf0402e10","service":"sir-philip-service","timestamp":"2025-02-20 21:20:05"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 21:22:47"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 21:22:48"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 21:22:49"}
+{"error":"\nInvalid `prisma.order.aggregate()` invocation:\n\n{\n  select: {\n    _sum: {\n      select: {\n        totalAmount: true\n      }\n    }\n  },\n  where: {\n    status: \"delivered\"\n            ~~~~~~~~~~~\n  }\n}\n\nInvalid value for argument `status`. Expected Status.","level":"error","message":"Error fetching dashboard metrics","service":"sir-philip-service","stack":"PrismaClientValidationError: \nInvalid `prisma.order.aggregate()` invocation:\n\n{\n  select: {\n    _sum: {\n      select: {\n        totalAmount: true\n      }\n    }\n  },\n  where: {\n    status: \"delivered\"\n            ~~~~~~~~~~~\n  }\n}\n\nInvalid value for argument `status`. Expected Status.\n    at wn (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n    at Vn.handleRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6982)\n    at Vn.handleAndLogRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6663)\n    at Vn.request (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6370)\n    at async l (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:130:9617)\n    at async Object.getDashboardMetrics (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/dashboard.controllers.js:17:28)","timestamp":"2025-02-20 21:22:50"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 21:22:50"}
+{"error":"\nInvalid `prisma.order.aggregate()` invocation:\n\n{\n  select: {\n    _sum: {\n      select: {\n        totalAmount: true\n      }\n    }\n  },\n  where: {\n    status: \"delivered\"\n            ~~~~~~~~~~~\n  }\n}\n\nInvalid value for argument `status`. Expected Status.","level":"error","message":"Error fetching dashboard metrics","service":"sir-philip-service","stack":"PrismaClientValidationError: \nInvalid `prisma.order.aggregate()` invocation:\n\n{\n  select: {\n    _sum: {\n      select: {\n        totalAmount: true\n      }\n    }\n  },\n  where: {\n    status: \"delivered\"\n            ~~~~~~~~~~~\n  }\n}\n\nInvalid value for argument `status`. Expected Status.\n    at wn (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n    at Vn.handleRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6982)\n    at Vn.handleAndLogRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6663)\n    at Vn.request (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6370)\n    at async l (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:130:9617)\n    at async Object.getDashboardMetrics (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/dashboard.controllers.js:17:28)","timestamp":"2025-02-20 21:22:50"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 21:22:57"}
+{"error":"\nInvalid `prisma.order.aggregate()` invocation:\n\n{\n  select: {\n    _sum: {\n      select: {\n        totalAmount: true\n      }\n    }\n  },\n  where: {\n    status: \"delivered\"\n            ~~~~~~~~~~~\n  }\n}\n\nInvalid value for argument `status`. Expected Status.","level":"error","message":"Error fetching dashboard metrics","service":"sir-philip-service","stack":"PrismaClientValidationError: \nInvalid `prisma.order.aggregate()` invocation:\n\n{\n  select: {\n    _sum: {\n      select: {\n        totalAmount: true\n      }\n    }\n  },\n  where: {\n    status: \"delivered\"\n            ~~~~~~~~~~~\n  }\n}\n\nInvalid value for argument `status`. Expected Status.\n    at wn (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n    at Vn.handleRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6982)\n    at Vn.handleAndLogRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6663)\n    at Vn.request (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6370)\n    at async l (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:130:9617)\n    at async Object.getDashboardMetrics (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/dashboard.controllers.js:17:28)","timestamp":"2025-02-20 21:22:57"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 21:22:57"}
+{"error":"\nInvalid `prisma.order.aggregate()` invocation:\n\n{\n  select: {\n    _sum: {\n      select: {\n        totalAmount: true\n      }\n    }\n  },\n  where: {\n    status: \"delivered\"\n            ~~~~~~~~~~~\n  }\n}\n\nInvalid value for argument `status`. Expected Status.","level":"error","message":"Error fetching dashboard metrics","service":"sir-philip-service","stack":"PrismaClientValidationError: \nInvalid `prisma.order.aggregate()` invocation:\n\n{\n  select: {\n    _sum: {\n      select: {\n        totalAmount: true\n      }\n    }\n  },\n  where: {\n    status: \"delivered\"\n            ~~~~~~~~~~~\n  }\n}\n\nInvalid value for argument `status`. Expected Status.\n    at wn (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n    at Vn.handleRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6982)\n    at Vn.handleAndLogRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6663)\n    at Vn.request (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6370)\n    at async l (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:130:9617)\n    at async Object.getDashboardMetrics (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/dashboard.controllers.js:17:28)","timestamp":"2025-02-20 21:22:57"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 21:27:52"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 21:27:52"}
+{"error":"\nInvalid `prisma.order.aggregate()` invocation:\n\n{\n  select: {\n    _sum: {\n      select: {\n        totalAmount: true\n      }\n    }\n  },\n  where: {\n    status: \"delivered\"\n            ~~~~~~~~~~~\n  }\n}\n\nInvalid value for argument `status`. Expected Status.","level":"error","message":"Error fetching dashboard metrics","service":"sir-philip-service","stack":"PrismaClientValidationError: \nInvalid `prisma.order.aggregate()` invocation:\n\n{\n  select: {\n    _sum: {\n      select: {\n        totalAmount: true\n      }\n    }\n  },\n  where: {\n    status: \"delivered\"\n            ~~~~~~~~~~~\n  }\n}\n\nInvalid value for argument `status`. Expected Status.\n    at wn (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n    at Vn.handleRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6982)\n    at Vn.handleAndLogRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6663)\n    at Vn.request (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6370)\n    at async l (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:130:9617)\n    at async Object.getDashboardMetrics (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/dashboard.controllers.js:17:28)","timestamp":"2025-02-20 21:27:52"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 21:27:52"}
+{"error":"\nInvalid `prisma.order.aggregate()` invocation:\n\n{\n  select: {\n    _sum: {\n      select: {\n        totalAmount: true\n      }\n    }\n  },\n  where: {\n    status: \"delivered\"\n            ~~~~~~~~~~~\n  }\n}\n\nInvalid value for argument `status`. Expected Status.","level":"error","message":"Error fetching dashboard metrics","service":"sir-philip-service","stack":"PrismaClientValidationError: \nInvalid `prisma.order.aggregate()` invocation:\n\n{\n  select: {\n    _sum: {\n      select: {\n        totalAmount: true\n      }\n    }\n  },\n  where: {\n    status: \"delivered\"\n            ~~~~~~~~~~~\n  }\n}\n\nInvalid value for argument `status`. Expected Status.\n    at wn (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n    at Vn.handleRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6982)\n    at Vn.handleAndLogRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6663)\n    at Vn.request (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6370)\n    at async l (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:130:9617)\n    at async Object.getDashboardMetrics (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/dashboard.controllers.js:17:28)","timestamp":"2025-02-20 21:27:53"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 21:27:53"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:44:48"}
+{"error":"\nInvalid `prisma.order.aggregate()` invocation:\n\n{\n  select: {\n    _sum: {\n      select: {\n        totalAmount: true\n      }\n    }\n  },\n  where: {\n    status: \"delivered\"\n            ~~~~~~~~~~~\n  }\n}\n\nInvalid value for argument `status`. Expected Status.","level":"error","message":"Error fetching dashboard metrics","service":"sir-philip-service","stack":"PrismaClientValidationError: \nInvalid `prisma.order.aggregate()` invocation:\n\n{\n  select: {\n    _sum: {\n      select: {\n        totalAmount: true\n      }\n    }\n  },\n  where: {\n    status: \"delivered\"\n            ~~~~~~~~~~~\n  }\n}\n\nInvalid value for argument `status`. Expected Status.\n    at wn (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n    at Vn.handleRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6982)\n    at Vn.handleAndLogRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6663)\n    at Vn.request (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6370)\n    at async l (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:130:9617)\n    at async Object.getDashboardMetrics (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/dashboard.controllers.js:17:28)","timestamp":"2025-02-20 22:44:49"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 22:46:35"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 22:46:35"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:46:37"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:46:38"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:46:38"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:46:38"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:47:18"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:47:18"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:49:17"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:49:17"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:49:18"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:49:19"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-20 22:49:22"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-20 22:49:22"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:49:23"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:49:23"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:49:23"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:49:23"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:51:43"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:51:43"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:53:32"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:53:32"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:53:32"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:53:32"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:56:00"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:56:00"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:56:39"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:56:39"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 22:56:41"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 22:56:41"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:56:44"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:56:44"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:56:44"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:56:44"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:58:44"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:58:44"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 22:58:55"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 22:58:55"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:01:17"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:01:17"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:03:22"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:03:22"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:03:48"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:03:48"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:05:35"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:05:35"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 23:05:40"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 23:05:41"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:05:41"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:05:41"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:05:41"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:05:41"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:07:45"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:07:45"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:12:07"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:12:07"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 23:12:11"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 23:12:12"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:12:13"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:12:13"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:12:13"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:12:13"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 23:18:47"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 23:18:48","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:18:48"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:18:49"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:18:49"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:18:49"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:19:40"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:19:40"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:19:40"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:19:40"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:19:43"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:19:44"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 23:22:23"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 23:22:23"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:22:25"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:22:25"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:22:25"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:22:25"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:22:33"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:22:33"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:22:38"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:22:38"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:22:38"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:22:38"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:22:56"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:22:57"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:25:10"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:25:10"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:26:03"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:26:03"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:29:17"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:29:17"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:29:17"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:29:17"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:31:12"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:31:12"}
+{"level":"error","message":"Refresh token validation failed: next is not a function","service":"sir-philip-service","timestamp":"2025-02-20 23:37:49"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-20 23:38:15"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-20 23:38:15","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"level":"info","message":"Fetching all orders","service":"sir-philip-service","timestamp":"2025-02-20 23:38:41"}
+{"level":"info","message":"Fetched 1 orders","service":"sir-philip-service","timestamp":"2025-02-20 23:38:42"}
+{"level":"info","message":"Updating order with ID: 1e75e3ea-500f-4e06-8647-cdebf0402e10","service":"sir-philip-service","timestamp":"2025-02-20 23:39:38"}
+{"level":"info","message":"Order updated successfully with ID: 1e75e3ea-500f-4e06-8647-cdebf0402e10","service":"sir-philip-service","timestamp":"2025-02-20 23:39:38"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 23:39:46"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 23:39:46"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:39:47"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:39:48"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:39:48"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:39:48"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:45:20"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:45:21"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:45:37"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:45:37"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:45:45"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:45:45"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:46:53"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:46:53"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:48:32"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:48:32"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-20 23:50:44"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-20 23:50:45"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:50:46"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:50:46"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:50:46"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:50:46"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:51:23"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:51:23"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:51:23"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:51:23"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:52:39"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:52:39"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-20 23:55:16"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-20 23:55:17"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-21 00:00:11"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-21 00:00:11"}
+{"level":"info","message":"Fetching dashboard metrics","service":"sir-philip-service","timestamp":"2025-02-21 00:00:14"}
+{"level":"info","message":"Dashboard metrics fetched successfully","service":"sir-philip-service","timestamp":"2025-02-21 00:00:14"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-21 11:57:43"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-21 11:57:44","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-21 17:25:06"}
+{"email":"lennoxgithinji37@gmail.com","level":"info","message":"User logged in successfully","role":"admin","service":"sir-philip-service","timestamp":"2025-02-21 17:25:07","userId":"be52c0a8-6459-4d45-94a9-95b690e45090"}
+{"address":"Murang'a","city":"Murang'a","level":"info","message":"Creating new delivery","service":"sir-philip-service","timestamp":"2025-02-21 17:26:14"}
+{"error":"\nInvalid `prisma.delivery.create()` invocation:\n\n{\n  data: {\n    trackNumber: \"tx-244937-sip\",\n    address: \"Murang'a\",\n    city: \"Murang'a\",\n    orderId: \"1e75e3ea-500f-4e06-8647-cdebf0402e10\",\n    deliveryStatus: \"pending\",\n    deliveryMethod: \"standard\",\n    deliveryDate: new Date(\"2025-02-24T14:26:14.078Z\"),\n+   trackingNumber: String\n  }\n}\n\nArgument `trackingNumber` is missing.","level":"error","message":"Failed to create delivery","service":"sir-philip-service","stack":"PrismaClientValidationError: \nInvalid `prisma.delivery.create()` invocation:\n\n{\n  data: {\n    trackNumber: \"tx-244937-sip\",\n    address: \"Murang'a\",\n    city: \"Murang'a\",\n    orderId: \"1e75e3ea-500f-4e06-8647-cdebf0402e10\",\n    deliveryStatus: \"pending\",\n    deliveryMethod: \"standard\",\n    deliveryDate: new Date(\"2025-02-24T14:26:14.078Z\"),\n+   trackingNumber: String\n  }\n}\n\nArgument `trackingNumber` is missing.\n    at wn (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n    at Vn.handleRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6982)\n    at Vn.handleAndLogRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6663)\n    at Vn.request (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6370)\n    at async l (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:130:9617)\n    at async Object.createDelivery (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/delivery.controllers.js:20:22)","timestamp":"2025-02-21 17:26:14"}
+{"address":"Murang'a","city":"Murang'a","level":"info","message":"Creating new delivery","service":"sir-philip-service","timestamp":"2025-02-21 17:26:38"}
+{"error":"\nInvalid `prisma.delivery.create()` invocation:\n\n{\n  data: {\n    trackNumber: \"tx-294408-sip\",\n    address: \"Murang'a\",\n    city: \"Murang'a\",\n    orderId: \"1e75e3ea-500f-4e06-8647-cdebf0402e10\",\n    deliveryStatus: \"pending\",\n    deliveryMethod: \"standard\",\n    deliveryDate: new Date(\"2025-02-24T14:26:38.658Z\"),\n+   trackingNumber: String\n  }\n}\n\nArgument `trackingNumber` is missing.","level":"error","message":"Failed to create delivery","service":"sir-philip-service","stack":"PrismaClientValidationError: \nInvalid `prisma.delivery.create()` invocation:\n\n{\n  data: {\n    trackNumber: \"tx-294408-sip\",\n    address: \"Murang'a\",\n    city: \"Murang'a\",\n    orderId: \"1e75e3ea-500f-4e06-8647-cdebf0402e10\",\n    deliveryStatus: \"pending\",\n    deliveryMethod: \"standard\",\n    deliveryDate: new Date(\"2025-02-24T14:26:38.658Z\"),\n+   trackingNumber: String\n  }\n}\n\nArgument `trackingNumber` is missing.\n    at wn (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:29:1363)\n    at Vn.handleRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6982)\n    at Vn.handleAndLogRequestError (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6663)\n    at Vn.request (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:121:6370)\n    at async l (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\@prisma\\client\\runtime\\library.js:130:9617)\n    at async Object.createDelivery (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/delivery.controllers.js:20:22)","timestamp":"2025-02-21 17:26:38"}
+{"address":"Murang'a","city":"Murang'a","level":"info","message":"Creating new delivery","service":"sir-philip-service","timestamp":"2025-02-21 17:28:19"}
+{"error":"trackNumber is not defined","level":"error","message":"Failed to create delivery","service":"sir-philip-service","stack":"ReferenceError: trackNumber is not defined\n    at Object.createDelivery (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/delivery.controllers.js:29:77)","timestamp":"2025-02-21 17:28:19"}
+{"address":"Murang'a","city":"Murang'a","level":"info","message":"Creating new delivery","service":"sir-philip-service","timestamp":"2025-02-21 17:30:23"}
+{"error":"trackNumber is not defined","level":"error","message":"Failed to create delivery","service":"sir-philip-service","stack":"ReferenceError: trackNumber is not defined\n    at Object.createDelivery (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/delivery.controllers.js:21:9)\n    at preHandlerCallbackInner (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\fastify\\lib\\handleRequest.js:161:24)\n    at preHandlerCallback (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\fastify\\lib\\handleRequest.js:129:5)\n    at next (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\fastify\\lib\\hooks.js:236:9)\n    at handleResolve (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\fastify\\lib\\hooks.js:253:7)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-02-21 17:30:23"}
+{"address":"Murang'a","city":"Murang'a","level":"info","message":"Creating new delivery","service":"sir-philip-service","timestamp":"2025-02-21 17:30:27"}
+{"error":"trackNumber is not defined","level":"error","message":"Failed to create delivery","service":"sir-philip-service","stack":"ReferenceError: trackNumber is not defined\n    at Object.createDelivery (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/delivery.controllers.js:21:9)\n    at preHandlerCallbackInner (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\fastify\\lib\\handleRequest.js:161:24)\n    at preHandlerCallback (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\fastify\\lib\\handleRequest.js:129:5)\n    at next (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\fastify\\lib\\hooks.js:236:9)\n    at handleResolve (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\fastify\\lib\\hooks.js:253:7)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-02-21 17:30:27"}
+{"address":"Murang'a","city":"Murang'a","level":"info","message":"Creating new delivery","service":"sir-philip-service","timestamp":"2025-02-21 17:31:01"}
+{"error":"trackNumber is not defined","level":"error","message":"Failed to create delivery","service":"sir-philip-service","stack":"ReferenceError: trackNumber is not defined\n    at Object.createDelivery (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/delivery.controllers.js:21:9)\n    at preHandlerCallbackInner (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\fastify\\lib\\handleRequest.js:161:24)\n    at preHandlerCallback (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\fastify\\lib\\handleRequest.js:129:5)\n    at next (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\fastify\\lib\\hooks.js:236:9)\n    at handleResolve (C:\\Users\\YVONNE\\Desktop\\Sir Philip\\Sir-Philip-s\\node_modules\\fastify\\lib\\hooks.js:253:7)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-02-21 17:31:01"}
+{"address":"Murang'a","city":"Murang'a","level":"info","message":"Creating new delivery","service":"sir-philip-service","timestamp":"2025-02-21 17:31:51"}
+{"error":"trackNumber is not defined","level":"error","message":"Failed to create delivery","service":"sir-philip-service","stack":"ReferenceError: trackNumber is not defined\n    at Object.createDelivery (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/delivery.controllers.js:29:77)","timestamp":"2025-02-21 17:31:52"}
+{"address":"Murang'a","city":"Murang'a","level":"info","message":"Creating new delivery","service":"sir-philip-service","timestamp":"2025-02-21 17:31:54"}
+{"error":"trackNumber is not defined","level":"error","message":"Failed to create delivery","service":"sir-philip-service","stack":"ReferenceError: trackNumber is not defined\n    at Object.createDelivery (file:///C:/Users/YVONNE/Desktop/Sir%20Philip/Sir-Philip-s/src/controllers/delivery.controllers.js:29:77)","timestamp":"2025-02-21 17:31:54"}
+{"address":"Murang'a","city":"Murang'a","level":"info","message":"Creating new delivery","service":"sir-philip-service","timestamp":"2025-02-21 17:32:33"}
+{"deliveryId":"a8ef3700-d416-4938-a249-4e9dd074778d","level":"info","message":"Delivery created successfully","service":"sir-philip-service","timestamp":"2025-02-21 17:32:33"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-21 17:33:08"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-21 17:33:08","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-21 18:35:36"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-21 18:35:37","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-21 18:36:03"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-21 18:36:03","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-21 18:37:11"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-21 18:37:11","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 16:29:48"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 16:29:49","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-22 16:29:54"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-22 16:29:55"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 17:24:44"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 17:24:44","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-22 17:27:57"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-22 17:27:57"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-22 17:32:24"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-22 17:32:24"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 18:02:01"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 18:02:02","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 18:04:26"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 18:04:26","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 18:14:51"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 18:14:51","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 18:17:57"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 18:17:58","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 18:51:31"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 18:51:33","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 19:01:47"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 19:01:47","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 19:01:50"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 19:01:50","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 19:01:55"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 19:01:56","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 19:02:21"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 19:02:21","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-22 19:02:28"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-22 19:02:28"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 19:23:43"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 19:26:35"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 19:32:38"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 19:32:39","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-22 19:32:52"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-22 19:32:52"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 19:33:58"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 19:36:04"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 19:36:17"}
+{"level":"info","message":"Failed to create the order: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"totalAmount\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"array\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"orderItems\"\n    ],\n    \"message\": \"Required\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-22 19:36:55"}
+{"level":"info","message":"Failed to create the order: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"totalAmount\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"array\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"orderItems\"\n    ],\n    \"message\": \"Required\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-22 19:36:56"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 19:37:26"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 19:37:28","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"info","message":"Failed to create the order: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"totalAmount\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"array\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"orderItems\"\n    ],\n    \"message\": \"Required\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-22 19:38:17"}
+{"level":"info","message":"Failed to create the order: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"totalAmount\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"array\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"orderItems\"\n    ],\n    \"message\": \"Required\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-22 19:38:17"}
+{"level":"info","message":"Failed to create the order: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"totalAmount\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"array\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"orderItems\"\n    ],\n    \"message\": \"Required\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-22 19:38:51"}
+{"level":"info","message":"Failed to create the order: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"totalAmount\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"array\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"orderItems\"\n    ],\n    \"message\": \"Required\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-22 19:38:52"}
+{"level":"info","message":"Failed to create the order: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"totalAmount\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"array\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"orderItems\"\n    ],\n    \"message\": \"Required\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-22 19:41:47"}
+{"level":"info","message":"Failed to create the order: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"number\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"totalAmount\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"array\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"orderItems\"\n    ],\n    \"message\": \"Required\"\n  }\n]","service":"sir-philip-service","timestamp":"2025-02-22 19:41:48"}
+{"error":"Cannot read properties of null (reading 'userId')","level":"error","message":"Failed to create order","service":"sir-philip-service","timestamp":"2025-02-22 20:18:44"}
+{"error":"Cannot read properties of null (reading 'userId')","level":"error","message":"Failed to create order","service":"sir-philip-service","timestamp":"2025-02-22 20:20:24"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 20:21:27"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 20:21:29"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 20:21:54"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 20:21:54","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 20:22:26"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 20:28:36"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 20:28:36","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-22 20:30:50"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-22 20:30:50"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 20:31:16"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 20:32:35"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 20:32:35","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-22 20:32:41"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-22 20:32:41"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-02-22 20:32:44"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-02-22 20:32:44"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 20:37:33"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 20:37:33","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-22 20:37:37"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-22 20:37:37"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 20:38:08"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 20:38:22"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 20:38:34"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 20:42:28"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-02-22 20:42:28"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 20:42:34"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-02-22 20:42:34"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 20:46:16"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-02-22 20:46:16"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 20:46:22"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-02-22 20:46:22"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-22 21:10:18"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-22 21:10:19","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-22 21:10:32"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-22 21:10:33"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 21:10:50"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-02-22 21:10:50"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-22 21:14:23"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-22 21:14:23"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-22 21:19:23"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-22 21:19:23"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-02-22 21:22:27"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-02-22 21:22:27"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-23 00:26:11"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-23 00:26:11","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-23 00:26:41"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-23 00:26:41"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-23 00:27:27"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-23 00:27:28","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-23 00:28:06"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-23 00:28:06","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-23 00:28:24"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-23 00:28:24"}
+{"level":"warn","message":"Unauthorized access attempt: No token provided","service":"sir-philip-service","timestamp":"2025-02-23 00:28:44"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-02-23 00:28:44"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-23 00:35:03"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-23 00:35:03","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-23 00:35:05"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-23 00:35:05","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-23 00:35:06"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-23 00:35:06","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-23 00:35:21"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-23 00:35:22","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-02-24 13:38:05"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-02-24 13:38:05"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-24 13:38:27"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-24 13:38:28","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-24 13:38:29"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-24 13:38:29","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-24 13:42:08"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-24 13:42:08","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-24 13:42:10"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-24 13:42:10","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-24 13:42:23"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-24 13:42:23","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-24 13:45:03"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-24 13:45:03","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-24 13:45:05"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-24 13:45:05","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-24 14:06:38"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-24 14:06:39","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-24 14:06:48"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-24 14:06:48","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-24 14:45:19"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-24 14:45:19","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-24 14:47:11"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-24 14:47:11","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-24 14:52:47"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-24 14:52:47","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-24 15:02:22"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-24 15:02:23","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-02-24 15:17:28"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-02-24 15:17:28","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:45:52"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:45:52"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:45:58"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:45:58"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:46:05"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:46:05"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:46:05"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:46:05"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:48:09"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:48:09"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:48:10"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:48:10"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:48:14"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:48:14"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:48:14"}
+{"level":"error","message":"Authentication failed: Format is Authorization: Bearer [token]","service":"sir-philip-service","timestamp":"2025-02-24 15:48:14"}

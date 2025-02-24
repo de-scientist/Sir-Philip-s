@@ -6,7 +6,10 @@ import {
   deleteCategory,
 } from "../controllers/category.controllers.js";
 import { authenticateUser, isAdmin } from "../middlewares/auth.js";
-import { checkCategoryExists, validateCategoryInput } from "../middlewares/category.middleware.js";
+import {
+  checkCategoryExists,
+  validateCategoryInput,
+} from "../middlewares/category.middleware.js";
 
 export const categoryRoutes = (server) => {
   // Create a new category
@@ -26,7 +29,7 @@ export const categoryRoutes = (server) => {
 
   // Update category by ID
   server.put("/api/categories/:id", {
-    preHandler: [authenticateUser, isAdmin, checkCategoryExists, validateCategoryInput],
+    // preHandler: [authenticateUser, isAdmin, checkCategoryExists, validateCategoryInput],
     handler: updateCategory,
   });
 

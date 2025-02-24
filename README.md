@@ -1,4 +1,5 @@
 # Sir-Philip-s
+
 Project Update - Authentication & Environment Configuration
 Overview
 This update enhances authentication, environment variable management, and logging while improving code structure and security.
@@ -16,7 +17,6 @@ Improved logging in logging.middleware.js for better debugging.
 Applied authentication middleware updates to secure routes.
 🔹 Routes Organization
 Introduced authRoutes.js to consolidate authentication-related routes.
-
 
 Enhanced getProducts Function
 

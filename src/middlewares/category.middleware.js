@@ -18,7 +18,9 @@ export const checkCategoryExists = async (req, reply) => {
 
     req.category = category; // Attach category to request object
   } catch (error) {
-    return reply.status(500).send({ message: "Error checking category", error });
+    return reply
+      .status(500)
+      .send({ message: "Error checking category", error });
   }
 };
 
@@ -27,6 +29,8 @@ export const validateCategoryInput = async (req, reply) => {
   const { name, description } = req.body;
 
   if (!name || !description) {
-    return reply.status(400).send({ message: "Name and description are required" });
+    return reply
+      .status(400)
+      .send({ message: "Name and description are required" });
   }
 };

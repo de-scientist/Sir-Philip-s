@@ -12,14 +12,14 @@ export const validateLoginInput = async (req, reply) => {
   } catch (error) {
     return reply.status(400).send({
       success: false,
-      error: error.errors[0].message
+      error: error.errors[0].message,
     });
   }
 };
 
 // export const checkExistingSession = async (req, reply) => {
 //   const { token, refreshToken } = req.cookies;
-  
+
 //   if (token || refreshToken) {
 //     return reply.status(400).send({
 //       success: false,

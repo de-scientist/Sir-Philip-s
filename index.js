@@ -17,6 +17,7 @@ import { variantRoutes } from "./src/routes/variation.routes.js";
 import { refreshTokenRoutes } from "./src/routes/authRoutes/refresh.routes.js";
 import { userRoutes } from "./src/routes/users.routes.js";
 import { dashboardRoutes } from "./src/routes/dashboard.routes.js";
+import { deliveryRoutes } from "./src/routes/delivery.routes.js";
 
 const server = Fastify({
   logger: {
@@ -29,9 +30,9 @@ const server = Fastify({
 // Register JWT
 server.register(fastifyJwt, {
   secret: config.JWT_SECRET,
-  sign: { 
+  sign: {
     algorithm: "HS256",
-    expiresIn: '60m' // Short-lived access tokens
+    expiresIn: "60m", // Short-lived access tokens
   },
   verify: { algorithms: ["HS256"] },
 });
@@ -48,10 +49,12 @@ server.register(fastifyCookie, {
 
 server.addHook("preHandler", loggingMiddleware);
 
-
 server.register(fastifyCors, {
   origin: (origin, cb) => {
-    const allowedOrigins = ["http://localhost:5173", "https://your-production-domain.com"];
+    const allowedOrigins = [
+      "http://localhost:5173",
+      "https://your-production-domain.com",
+    ];
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
       cb(null, true);
       return;
@@ -60,10 +63,9 @@ server.register(fastifyCors, {
   },
   methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
-  exposedHeaders: ['Authorization'],
+  exposedHeaders: ["Authorization"],
   credentials: true,
 });
-
 
 // Register rate limiting
 server.register(fastifyRateLimit, {
@@ -87,6 +89,7 @@ cartRoutes(server);
 variantRoutes(server);
 refreshTokenRoutes(server);
 dashboardRoutes(server);
+deliveryRoutes(server);
 
 const start = async () => {
   const HOST = config.NODE_ENV === "production" ? `0.0.0.0` : `localhost`;

@@ -21,9 +21,9 @@ export const createVariant = async (req, reply) => {
         variantName: data.variantName,
         variations: data.variations,
       },
-      include:{
-        product: true
-      }
+      include: {
+        product: true,
+      },
     });
 
     logger.info(`Variant created successfully with ID: ${variant.id}`);
@@ -96,7 +96,9 @@ export const updateVariant = async (req, reply) => {
   } catch (error) {
     if (error instanceof z.ZodError) {
       logger.error(`Validation error: ${error.message}`);
-      return reply.status(400).send({ error: "Invalid input data", details: error.errors });
+      return reply
+        .status(400)
+        .send({ error: "Invalid input data", details: error.errors });
     }
     logger.error(`Failed to update variant: ${error.message}`);
     reply.status(500).send({ error: "Failed to update variant" });
@@ -109,12 +111,12 @@ export const deleteVariant = async (req, reply) => {
     logger.info(`Deleting variant with ID: ${variantId}`);
 
     const verifyVariation = await prisma.variant.findUnique({
-        where: {id: variantId}
+      where: { id: variantId },
     });
-    
-    if(!verifyVariation){
-        logger.info(`Did not find the variant ${variantId}`)
-        return reply.status(404).send({message: "Variant not found" });
+
+    if (!verifyVariation) {
+      logger.info(`Did not find the variant ${variantId}`);
+      return reply.status(404).send({ message: "Variant not found" });
     }
 
     await prisma.variant.delete({
@@ -122,9 +124,11 @@ export const deleteVariant = async (req, reply) => {
     });
 
     logger.info(`Variant deleted successfully with ID: ${variantId}`);
-    reply.status(200).send({message: "Variant deleted successfully."});
+    reply.status(200).send({ message: "Variant deleted successfully." });
   } catch (error) {
     logger.error(`Failed to delete variant: ${error.message}`);
-    reply.status(500).send({ message: "Failed to delete variant", error:error });
+    reply
+      .status(500)
+      .send({ message: "Failed to delete variant", error: error });
   }
 };

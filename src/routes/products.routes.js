@@ -16,7 +16,7 @@ export const productRoutes = (server) => {
     handler: createProduct,
   });
 
-//Creates multiple products
+  //Creates multiple products
   server.post("/api/categories/:categoryId/products", {
     preHandler: [authenticateUser],
     handler: createMany,

@@ -20,8 +20,22 @@ enum Role {
 
 enum Status {
   pending
-  shipped
+  processing
+  completed
+  cancelled
+}
+
+enum DeliveryStatus {
+  pending
+  processing
   delivered
+  failed
+}
+
+enum PaymentMethod {
+  mpesa
+  credit
+  bank
 }
 
 model User {
@@ -61,6 +75,7 @@ model Product {
 model Category {
   id          String    @id @default(uuid())
   name        String    @unique
+  image       String    @default("https://img.freepik.com/premium-photo/milk-fruits-yogurt-from-natural-milk-strawberries_118454-2953.jpg?ga=GA1.1.786348031.1736697841&semt=ais_hybrid")
   description String?
   products    Product[]
   createdAt   DateTime  @default(now())
@@ -68,16 +83,19 @@ model Category {
 }
 
 model Order {
-  id          String      @id @default(uuid())
-  userId      String
-  user        User        @relation(fields: [userId], references: [userId])
-  totalAmount Float
-  status      Status      @default(pending) // "pending", "shipped", "delivered"
-  createdAt   DateTime    @default(now())
-  updatedAt   DateTime    @updatedAt
-  orderItems  OrderItem[]
-  Payment     Payment[]
-  Delivery    Delivery[]
+  id            String        @id @default(uuid())
+  userId        String
+  user          User          @relation(fields: [userId], references: [userId])
+  totalAmount   Float
+  deliveryFee   Float         @default(120.00)
+  subtotal      Float
+  paymentMethod PaymentMethod
+  status        Status        @default(pending)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  orderItems    OrderItem[]
+  Payment       Payment[]
+  Delivery      Delivery[]
 }
 
 model OrderItem {
@@ -137,12 +155,19 @@ model Payment {
 }
 
 model Delivery {
-  id             String @id @default(uuid())
-  address        String
-  city           String
-  deliveryStatus String
-  trackNumber    String @default(cuid())
-  deliveryMethod String
-  orderId        String @unique
-  order          Order  @relation(fields: [orderId], references: [id])
+  id               String         @id @default(uuid())
+  trackingNumber   String         @unique @default(cuid())
+  address          String
+  city             String
+  deliveryStatus   DeliveryStatus @default(pending)
+  deliveryMethod   String?
+  deliveryDate     DateTime
+  orderId          String
+  order            Order          @relation(fields: [orderId], references: [id])
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  deliveryAttempts Int            @default(0)
+
+  @@index([trackingNumber])
+  @@index([deliveryStatus])
 }

@@ -1,12 +1,13 @@
 import { z } from "zod";
-import { prisma } from "../prismaClient";  // Assuming you have a Prisma client setup
+import { PrismaClient } from "@prisma/client";
+
+
+const prisma = new PrismaClient();
 
 // Zod schema for validating delivery input
 const deliverySchema = z.object({
   address: z.string().min(1, { message: "Address is required" }),
   city: z.string().min(1, { message: "City is required" }),
-  deliveryStatus: z.string().min(1, { message: "Delivery status is required" }),
-  deliveryMethod: z.string().min(1, { message: "Delivery method is required" }),
   orderId: z.string().min(1, { message: "Order ID is required" }),
 });
 
@@ -14,9 +15,9 @@ const deliverySchema = z.object({
 export const validateDeliveryInput = async (req, reply) => {
   try {
     // Validate the request body against the schema
-    deliverySchema.parse(req.body);  // If validation fails, Zod will throw an error
+    deliverySchema.parse(req.body); // If validation fails, Zod will throw an error
   } catch (error) {
-    reply.status(400).send({ message: error.errors[0].message });  // Send error message from Zod
+    reply.status(400).send({ message: error.errors[0].message }); // Send error message from Zod
   }
 };
 

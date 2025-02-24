@@ -19,7 +19,9 @@ export const validateRegistrationInput = async (req, reply) => {
     if (error instanceof z.ZodError) {
       return reply.status(400).send({ error: error.errors });
     }
-    return reply.status(500).send({ message: "Internal server error during validation." });
+    return reply
+      .status(500)
+      .send({ message: "Internal server error during validation." });
   }
 };
 
@@ -33,9 +35,13 @@ export const checkIfEmailExists = async (req, reply) => {
     });
 
     if (existingUser) {
-      return reply.status(400).send({ message: "Email address is already in use." });
+      return reply
+        .status(400)
+        .send({ message: "Email address is already in use." });
     }
   } catch (error) {
-    return reply.status(500).send({ message: "Error checking for existing user." });
+    return reply
+      .status(500)
+      .send({ message: "Error checking for existing user." });
   }
 };

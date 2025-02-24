@@ -1,8 +1,8 @@
 import { PrismaClient } from "@prisma/client";
 import { z } from "zod";
-import  { compareSync } from "bcrypt";
+import { compareSync } from "bcrypt";
 import dotenv from "dotenv";
-import {logger} from "../utils/logger.js";
+import { logger } from "../utils/logger.js";
 
 dotenv.config();
 
@@ -22,9 +22,9 @@ export const loginController = async (req, reply) => {
   try {
     const { email, password } = loginSchema.parse(req.body);
 
-    logger.info('Login attempt', { email });
+    logger.info("Login attempt", { email });
 
-    const user = await prisma.user.findUnique({ 
+    const user = await prisma.user.findUnique({
       where: { email },
       select: {
         userId: true,
@@ -32,60 +32,60 @@ export const loginController = async (req, reply) => {
         password: true,
         firstname: true,
         lastname: true,
-        role: true
-      }
+        role: true,
+      },
     });
 
     if (!user || !compareSync(password, user.password)) {
-      logger.warn('Failed login attempt', { email });
+      logger.warn("Failed login attempt", { email });
       return reply.status(401).send({
         success: false,
-        error: "Invalid credentials"
+        error: "Invalid credentials",
       });
     }
 
-    logger.info('User logged in successfully', { 
+    logger.info("User logged in successfully", {
       userId: user.userId,
       email: user.email,
-      role: user.role 
+      role: user.role,
     });
 
     // Generate tokens
     const accessToken = await reply.jwtSign(
-      { 
+      {
         userId: user.userId,
         email: user.email,
-        role: user.role 
+        role: user.role,
       },
-      { expiresIn: '60m' }
+      { expiresIn: "60m" },
     );
 
     const refreshToken = await reply.jwtSign(
-      { 
+      {
         userId: user.userId,
         email: user.email,
-        role: user.role
+        role: user.role,
       },
-      { expiresIn: '28d' }
+      { expiresIn: "28d" },
     );
 
     // Set cookies
-    reply.setCookie('token', accessToken, {
+    reply.setCookie("accessToken", accessToken, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'strict',
-      path: '/'
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "strict",
+      path: "/",
     });
 
-    reply.setCookie('refreshToken', refreshToken, {
+    reply.setCookie("refreshToken", refreshToken, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'strict',
-      path: '/',
-      maxAge: 28 * 24 * 60 * 60 * 1000 // 28 days
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "strict",
+      path: "/",
+      maxAge: 28 * 24 * 60 * 60 * 1000, // 28 days
     });
 
-    logger.debug('Tokens generated and cookies set', { userId: user.userId });
+    logger.debug("Tokens generated and cookies set", { userId: user.userId });
 
     return reply.send({
       success: true,
@@ -95,20 +95,19 @@ export const loginController = async (req, reply) => {
         email: user.email,
         firstname: user.firstname,
         lastname: user.lastname,
-        role: user.role
-      }
+        role: user.role,
+      },
     });
-
   } catch (error) {
-    logger.error('Login error occurred', { 
+    logger.error("Login error occurred", {
       error: error.message,
       stack: error.stack,
-      email: req.body?.email 
+      email: req.body?.email,
     });
-    console.error('Login error:', error);
+    console.error("Login error:", error);
     return reply.status(500).send({
       success: false,
-      error: "Internal server error"
+      error: "Internal server error",
     });
   }
 };

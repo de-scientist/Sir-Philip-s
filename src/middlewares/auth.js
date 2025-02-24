@@ -1,6 +1,7 @@
 import pkg from "fastify";
 const { FastifyReply, FastifyRequest } = pkg;
-import { logger } from '../utils/logger.js';
+import { logger } from "../utils/logger.js";
+import { error } from "winston";
 
 /**
  * Authentication Middleware
@@ -8,7 +9,7 @@ import { logger } from '../utils/logger.js';
  * @param {FastifyReply} reply
  */
 export const authenticateUser = async (request, reply) => {
-  const token = request.cookies.token;
+  const token = request.cookies.accessToken;
   const refreshToken = request.cookies.refreshToken;
 
   if (!token) {
@@ -22,38 +23,39 @@ export const authenticateUser = async (request, reply) => {
   try {
     // Verify the access token
     const decoded = await request.jwtVerify(token);
-    
+
     // Attach user info to request object
     request.user = {
       userId: decoded.userId,
       firstname: decoded.firstname,
       lastname: decoded.lastname,
       role: decoded.role,
-      email: decoded.email
+      email: decoded.email,
     };
-    
+
     request.log.info(`User ${decoded.userId} authenticated successfully`);
     return;
-
   } catch (err) {
     // Handle token verification errors
-    if (err.code === 'FST_JWT_AUTHORIZATION_TOKEN_EXPIRED' && refreshToken) {
+    if (err.code === "FST_JWT_AUTHORIZATION_TOKEN_EXPIRED" && refreshToken) {
       try {
         // Verify refresh token
-        const decoded = await request.jwtVerify(refreshToken, { sign: { sub: 'refresh' } });
-        
+        const decoded = await request.jwtVerify(refreshToken, {
+          sign: { sub: "refresh" },
+        });
+
         // Generate new access token
         const newToken = await reply.jwtSign(
-          { ...decoded, sub: 'access' },
-          { expiresIn: '1h' }
+          { ...decoded, sub: "access" },
+          { expiresIn: "1h" },
         );
-        
+
         // Set new access token in cookie
-        reply.setCookie('token', newToken, {
+        reply.setCookie("token", newToken, {
           httpOnly: true,
-          secure: process.env.NODE_ENV === 'production',
-          sameSite: 'lax',
-          path: '/'
+          secure: process.env.NODE_ENV === "production",
+          sameSite: "lax",
+          path: "/",
         });
 
         // Update request.user
@@ -62,9 +64,9 @@ export const authenticateUser = async (request, reply) => {
           firstname: decoded.firstname,
           lastname: decoded.lastname,
           role: decoded.role,
-          email: decoded.email
+          email: decoded.email,
         };
-        
+
         return;
       } catch (refreshErr) {
         logger.error(`Refresh token validation failed: ${refreshErr.message}`);
@@ -91,7 +93,9 @@ export const authenticateUser = async (request, reply) => {
 export const isAdmin = async (request, reply) => {
   try {
     if (!request.user || request.user.role !== "admin") {
-      logger.warn(`Unauthorized admin access attempt by ${request.user?.email}`);
+      logger.warn(
+        `Unauthorized admin access attempt by ${request.user?.email}`,
+      );
       return reply.code(403).send({
         error: "Forbidden",
         message: "Admin privileges required.",
@@ -116,7 +120,9 @@ export const isAdmin = async (request, reply) => {
 export const isUser = async (request, reply) => {
   try {
     if (!request.user || request.user.role !== "user") {
-      logger.warn(`Unauthorized user access attempt by ${request.user?.email || "Unknown User"}`);
+      logger.warn(
+        `Unauthorized user access attempt by ${request.user?.email || "Unknown User"}`,
+      );
       return reply.code(403).send({
         error: "Forbidden",
         message: "User privileges required.",

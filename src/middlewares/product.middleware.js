@@ -17,7 +17,7 @@ export const filterSchema = z.object({
 });
 
 export const searchSchema = z.object({
-  query: z.string().min(3, "Please enter a valid search name").optional()
+  query: z.string().min(3, "Please enter a valid search name").optional(),
 });
 
 export const productsSchema = z.array(productSchema);
