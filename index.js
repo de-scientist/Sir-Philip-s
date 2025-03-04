@@ -39,12 +39,12 @@ server.register(fastifyJwt, {
 
 // Register @fastify/cookie with secure options
 server.register(fastifyCookie, {
-  secret: config.COOKIE_SECRET, // Encrypt signed cookies
+  secret: config.COOKIE_SECRET, 
   hook: "onRequest",
   signed: true,
-  httpOnly: true, // Prevent JavaScript access
-  secure: config.NODE_ENV === "production", // Use secure cookies in production
-  sameSite: "strict", // Prevent CSRF attacks
+  httpOnly: true,
+  secure: config.NODE_ENV === "production", 
+  sameSite: "strict", 
 });
 
 server.addHook("preHandler", loggingMiddleware);

@@ -1,4 +1,5 @@
 import {
+  getProfile,
   getUser,
   updateUserProfile,
   deleteUser,
@@ -9,8 +10,13 @@ export const userRoutes = (server) => {
   // Get User Profile - This route is protected by authenticateUser middleware
   server.get("/api/users/profile", {
     preHandler: [authenticateUser],
-    handler: getUser,
+    handler: getProfile,
   });
+
+  server.get("/api/user", {
+    preHandler: [authenticateUser],
+    handler: getUser,
+  })
 
   // Update User Profile - This route is protected by authenticateUser middleware
   server.put("/api/users/profile", { handler: updateUserProfile });

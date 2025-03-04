@@ -32,6 +32,7 @@ export const loginController = async (req, reply) => {
         password: true,
         firstname: true,
         lastname: true,
+        avatar: true,
         role: true,
       },
     });
@@ -87,7 +88,7 @@ export const loginController = async (req, reply) => {
 
     logger.debug("Tokens generated and cookies set", { userId: user.userId });
 
-    return reply.send({
+    return reply.status(200).send({
       success: true,
       message: "Login successful",
       user: {
@@ -96,9 +97,11 @@ export const loginController = async (req, reply) => {
         firstname: user.firstname,
         lastname: user.lastname,
         role: user.role,
+        avatar: user.avatar
       },
     });
   } catch (error) {
+    console.error(error);
     logger.error("Login error occurred", {
       error: error.message,
       stack: error.stack,

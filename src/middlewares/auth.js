@@ -1,7 +1,6 @@
 import pkg from "fastify";
 const { FastifyReply, FastifyRequest } = pkg;
 import { logger } from "../utils/logger.js";
-import { error } from "winston";
 
 /**
  * Authentication Middleware
@@ -9,10 +8,12 @@ import { error } from "winston";
  * @param {FastifyReply} reply
  */
 export const authenticateUser = async (request, reply) => {
-  const token = request.cookies.accessToken;
+  const accessToken = request.cookies.accessToken;
   const refreshToken = request.cookies.refreshToken;
 
-  if (!token) {
+  console.log("Here is an AccessToken", accessToken)
+  console.log("Here is an RefreshToken", refreshToken)
+  if (!accessToken) {
     logger.warn("Unauthorized access attempt: No token provided");
     return reply.code(401).send({
       error: "Unauthorized",
@@ -22,7 +23,7 @@ export const authenticateUser = async (request, reply) => {
 
   try {
     // Verify the access token
-    const decoded = await request.jwtVerify(token);
+    const decoded = await request.jwtVerify(accessToken);
 
     // Attach user info to request object
     request.user = {
@@ -30,7 +31,7 @@ export const authenticateUser = async (request, reply) => {
       firstname: decoded.firstname,
       lastname: decoded.lastname,
       role: decoded.role,
-      email: decoded.email,
+      email: decoded.email
     };
 
     request.log.info(`User ${decoded.userId} authenticated successfully`);
@@ -45,13 +46,13 @@ export const authenticateUser = async (request, reply) => {
         });
 
         // Generate new access token
-        const newToken = await reply.jwtSign(
+        const newAccessToken = await reply.jwtSign(
           { ...decoded, sub: "access" },
           { expiresIn: "1h" },
         );
 
         // Set new access token in cookie
-        reply.setCookie("token", newToken, {
+        reply.setCookie("accessToken", newAccessToken, {
           httpOnly: true,
           secure: process.env.NODE_ENV === "production",
           sameSite: "lax",
@@ -69,6 +70,7 @@ export const authenticateUser = async (request, reply) => {
 
         return;
       } catch (refreshErr) {
+        console.error(refreshErr)
         logger.error(`Refresh token validation failed: ${refreshErr.message}`);
         return reply.code(401).send({
           message: "Invalid refresh token. Please login again.",

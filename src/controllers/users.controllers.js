@@ -18,9 +18,14 @@ const updateUserSchema = z.object({
   avatar: z.string().optional(),
 });
 
-export const getUser = async (request, reply) => {
+export const getProfile = async (request, reply) => {
   try {
-    const userId = request.user.id;
+    if (!request.user) {
+      logger.warn("Profile fetch attempted without user authentication");
+      return reply.status(401).send({ message: "Authentication required" });
+    }
+
+    const userId = request.user.userId;
     logger.debug("Fetching user profile", { userId });
 
     if (!userId) {
@@ -29,12 +34,15 @@ export const getUser = async (request, reply) => {
     }
 
     const user = await prisma.user.findUnique({
-      where: { id: userId },
-      include: {
-        orders: true,
-        reviews: true,
-        cart: true,
-      },
+      where: { userId: userId },
+      select: {
+        firstname: true,
+        lastname: true,
+        email: true,
+        avatar: true,
+        role: true,
+        createdAt: true
+      }
     });
 
     if (!user) {
@@ -45,6 +53,51 @@ export const getUser = async (request, reply) => {
     logger.info("User profile fetched successfully", { userId });
     return reply.status(200).send(user);
   } catch (error) {
+    console.error(error)
+    logger.error("Error fetching user profile", {
+      error: error.message,
+      stack: error.stack,
+      userId: request.user?.userId,
+    });
+    return reply.status(500).send({ message: "Internal Server Error", error: error });
+  }
+};
+
+export const getUser = async (request, reply) => {
+  try {
+    const userId = request.user.userId;
+    logger.debug("Fetching user details", { userId });
+
+    if (!userId) {
+      logger.warn("User details fetch attempted without userId");
+      return reply.status(400).send({ message: "User ID is required" });
+    }
+
+    const user = await prisma.user.findUnique({
+      where: { userId: userId },
+      select:{
+        firstname: true,
+        lastname: true,
+        email: true,
+        phoneNo: true,
+        createdAt: true,
+        avatar: true,
+        orders: true,
+        reviews: true,
+        cart: true
+      }
+    });
+    console.log(user)
+
+    if (!user) {
+      logger.warn("User not found", { userId });
+      return reply.status(404).send({ message: "User not found" });
+    }
+
+    logger.info("User details fetched successfully", { userId });
+    return reply.status(200).send(user);
+  } catch (error) {
+    console.error(error)
     logger.error("Error fetching user profile", {
       error: error.message,
       stack: error.stack,
@@ -62,6 +115,7 @@ export const updateUserProfile = async (request, reply) => {
       updates: request.body,
     });
 
+    //Check if the user is authenticated
     if (!request.user?.userId) {
       return reply.status(401).send({
         message: "Authentication required",
@@ -99,13 +153,11 @@ export const updateUserProfile = async (request, reply) => {
       },
       data: parsedBody.data,
       select: {
-        userId: true,
         email: true,
         firstname: true,
         lastname: true,
         phoneNo: true,
         avatar: true,
-        role: true,
       },
     });
 
@@ -117,6 +169,7 @@ export const updateUserProfile = async (request, reply) => {
       user: updatedUser,
     });
   } catch (error) {
+    console.error(error)
     logger.error("Error updating user profile", {
       error: error.message,
       code: error.code,
