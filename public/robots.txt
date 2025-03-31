@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /api/products
+Allow: /api/categories
+Disallow: /api/users
+Disallow: /api/orders
+Disallow: /api/cart

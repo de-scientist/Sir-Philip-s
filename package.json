@@ -1,5 +1,5 @@
 {
-  "name": "index",
+  "name": "sir-philip-s",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -7,24 +7,35 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "lint": "eslint .",
+    "build": "npm prune --production",
+    "deploy": "NODE_ENV=production npm run prisma:migrate && NODE_ENV=production npm run prisma:generate && NODE_ENV=production node index.js"
   },
   "dependencies": {
-    "@fastify/cookie": "^11.0.2",
-    "@fastify/cors": "^10.0.2",
-    "@fastify/jwt": "^9.0.3",
-    "@fastify/rate-limit": "^10.2.2",
+    "@fastify/compress": "^6.2.1",
+    "@fastify/cookie": "^8.3.0",
+    "@fastify/cors": "^8.3.0",
+    "@fastify/helmet": "^10.1.1",
+    "@fastify/jwt": "^7.2.1",
+    "@fastify/rate-limit": "^8.0.3",
     "@prisma/client": "^6.2.1",
     "bcrypt": "^5.1.1",
     "date-fns": "^4.1.0",
     "dotenv": "^16.4.7",
-    "fastify": "^5.2.1",
+    "fastify": "^4.24.0",
+    "uuid": "^9.0.1",
     "winston": "^3.17.0",
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "eslint": "^8.57.0",
     "nodemon": "^3.1.9",
     "pino-pretty": "^13.0.0",
+    "prettier": "^3.2.5",
     "prisma": "^6.2.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }

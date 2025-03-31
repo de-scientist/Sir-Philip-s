@@ -545,3 +545,27 @@
 {"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-04 16:31:28"}
 {"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-04 16:31:32"}
 {"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-04 16:31:32"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-03-21 15:46:08"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:08"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:09"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:09"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:11"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:11"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:48"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:48"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:51"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:51"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:52"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:52"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:53"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:53"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:54"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:54"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:55"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:55"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:56"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:56"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:57"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:57"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:49:19"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:49:20"}

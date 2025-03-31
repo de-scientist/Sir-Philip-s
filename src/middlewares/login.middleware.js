@@ -16,15 +16,3 @@ export const validateLoginInput = async (req, reply) => {
     });
   }
 };
-
-// export const checkExistingSession = async (req, reply) => {
-//   const { token, refreshToken } = req.cookies;
-
-//   if (token || refreshToken) {
-//     return reply.status(400).send({
-//       success: false,
-//       error: "Already logged in"
-//     });
-//   }
-//   return true;
-// };

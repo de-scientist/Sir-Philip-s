@@ -16,6 +16,7 @@ const updateUserSchema = z.object({
     .optional(),
   phoneNo: z.string().optional(),
   avatar: z.string().optional(),
+  
 });
 
 export const getProfile = async (request, reply) => {

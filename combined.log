@@ -1485,3 +1485,58 @@
 {"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-04 16:31:28"}
 {"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-04 16:31:32"}
 {"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-04 16:31:32"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-03-21 15:43:58"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-03-21 15:43:58"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-03-21 15:44:15"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-03-21 15:44:15"}
+{"level":"warn","message":"Unauthorized access attempt: No token provided","service":"sir-philip-service","timestamp":"2025-03-21 15:45:34"}
+{"level":"warn","message":"Unauthorized access attempt: No token provided","service":"sir-philip-service","timestamp":"2025-03-21 15:45:34"}
+{"level":"warn","message":"Unauthorized access attempt: No token provided","service":"sir-philip-service","timestamp":"2025-03-21 15:45:35"}
+{"level":"warn","message":"Unauthorized access attempt: No token provided","service":"sir-philip-service","timestamp":"2025-03-21 15:45:35"}
+{"level":"warn","message":"Unauthorized access attempt: No token provided","service":"sir-philip-service","timestamp":"2025-03-21 15:45:37"}
+{"level":"warn","message":"Unauthorized access attempt: No token provided","service":"sir-philip-service","timestamp":"2025-03-21 15:45:37"}
+{"level":"warn","message":"Unauthorized access attempt: No token provided","service":"sir-philip-service","timestamp":"2025-03-21 15:45:41"}
+{"level":"warn","message":"Unauthorized access attempt: No token provided","service":"sir-philip-service","timestamp":"2025-03-21 15:45:41"}
+{"email":"wanja@gmail.com","level":"info","message":"Login attempt","service":"sir-philip-service","timestamp":"2025-03-21 15:46:06"}
+{"email":"wanja@gmail.com","level":"info","message":"User logged in successfully","role":"user","service":"sir-philip-service","timestamp":"2025-03-21 15:46:07","userId":"cdd0d31f-cb0b-4b1f-b1ab-1b34d6199de1"}
+{"level":"error","message":"Authentication failed: No Authorization was found in request.headers","service":"sir-philip-service","timestamp":"2025-03-21 15:46:08"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:08"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:09"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:09"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:11"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:11"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:48"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:48"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:51"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:51"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:52"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:52"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:53"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:53"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:54"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:54"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:55"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:55"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:56"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:56"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:57"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:46:57"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:49:19"}
+{"level":"error","message":"Authentication failed: Authorization token is invalid: The token is malformed.","service":"sir-philip-service","timestamp":"2025-03-21 15:49:20"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-03-21 16:58:07"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-03-21 16:58:07"}
+{"level":"info","message":"Fetching all products","service":"sir-philip-service","timestamp":"2025-03-21 17:04:17"}
+{"level":"info","message":"Fetched 22 products","service":"sir-philip-service","timestamp":"2025-03-21 17:04:18"}
+{"level":"info","message":"Fetching all categories","service":"sir-philip-service","timestamp":"2025-03-21 17:11:06"}
+{"level":"info","message":"Categories found: [object Object],[object Object],[object Object],[object Object]","service":"sir-philip-service","timestamp":"2025-03-21 17:11:07"}
+{"level":"warn","message":"Unauthorized access attempt: No token provided","service":"sir-philip-service","timestamp":"2025-03-21 17:12:13"}
+{"level":"warn","message":"Failed login attempt for lennoxgithinji37@gmail.com","service":"sir-philip-service","timestamp":"2025-03-21 17:12:27"}
+{"level":"warn","message":"Failed login attempt for lennoxgithinji37@gmail.com","service":"sir-philip-service","timestamp":"2025-03-21 17:12:38"}
+{"level":"info","message":"User githinji@gmail.com logged in successfully","service":"sir-philip-service","timestamp":"2025-03-21 17:13:37"}
+{"level":"info","message":"User profile fetched successfully","service":"sir-philip-service","timestamp":"2025-03-21 17:13:37","userId":"ea274f84-7e96-4ce9-9485-aaa549f658ad"}
+{"level":"info","message":"User profile fetched successfully","service":"sir-philip-service","timestamp":"2025-03-21 17:17:23","userId":"ea274f84-7e96-4ce9-9485-aaa549f658ad"}
+{"level":"info","message":"User profile fetched successfully","service":"sir-philip-service","timestamp":"2025-03-21 17:23:14","userId":"ea274f84-7e96-4ce9-9485-aaa549f658ad"}
+{"level":"info","message":"User githinji@gmail.com logged in successfully","service":"sir-philip-service","timestamp":"2025-03-21 18:18:20"}
+{"level":"info","message":"User profile fetched successfully","service":"sir-philip-service","timestamp":"2025-03-21 18:18:21","userId":"ea274f84-7e96-4ce9-9485-aaa549f658ad"}
+{"level":"info","message":"User githinji@gmail.com logged in successfully","service":"sir-philip-service","timestamp":"2025-03-21 18:20:27"}
+{"level":"info","message":"User profile fetched successfully","service":"sir-philip-service","timestamp":"2025-03-21 18:20:27","userId":"ea274f84-7e96-4ce9-9485-aaa549f658ad"}

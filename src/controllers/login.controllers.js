@@ -1,116 +1,86 @@
-import { PrismaClient } from "@prisma/client";
-import { z } from "zod";
-import { compareSync } from "bcrypt";
-import dotenv from "dotenv";
 import { logger } from "../utils/logger.js";
+import { PrismaClient } from "@prisma/client";
+import bcrypt from "bcrypt";
+import { z } from "zod";
 
-dotenv.config();
-
-// Validation Schema
-const loginSchema = z.object({
-  email: z.string().email({
-    required_error: "Email is required",
-    invalid_type_error: "Email must be a string",
-  }),
-  password: z.string(),
-});
-
-// Initialize Prisma
 const prisma = new PrismaClient();
 
-export const loginController = async (req, reply) => {
+const loginSchema = z.object({
+  email: z.string().email("Invalid email address"),
+  password: z.string().min(6, "Password must be at least 6 characters")
+});
+
+export const loginController = async (request, reply) => {
   try {
-    const { email, password } = loginSchema.parse(req.body);
-
-    logger.info("Login attempt", { email });
-
+    // Validate input
+    const { email, password } = loginSchema.parse(request.body);
+    
+    // Find user by email
     const user = await prisma.user.findUnique({
-      where: { email },
-      select: {
-        userId: true,
-        email: true,
-        password: true,
-        firstname: true,
-        lastname: true,
-        avatar: true,
-        role: true,
-      },
+      where: { email }
     });
 
-    if (!user || !compareSync(password, user.password)) {
-      logger.warn("Failed login attempt", { email });
-      return reply.status(401).send({
-        success: false,
-        error: "Invalid credentials",
-      });
+    // If user doesn't exist or password is incorrect
+    if (!user || !(await bcrypt.compare(password, user.password))) {
+      logger.warn(`Failed login attempt for ${email}`);
+      return reply.code(401).send({ message: 'Invalid email or password' });
     }
 
-    logger.info("User logged in successfully", {
+    // Generate a CSRF token
+    const csrfToken = crypto.randomUUID();
+    
+    // Create JWT payload (exclude sensitive info)
+    const tokenPayload = {
       userId: user.userId,
+      firstname: user.firstname,
+      lastname: user.lastname,
       email: user.email,
-      role: user.role,
-    });
+      role: user.role
+    };
 
-    // Generate tokens
-    const accessToken = await reply.jwtSign(
-      {
-        userId: user.userId,
-        email: user.email,
-        role: user.role,
-      },
-      { expiresIn: "60m" },
-    );
-
-    const refreshToken = await reply.jwtSign(
-      {
-        userId: user.userId,
-        email: user.email,
-        role: user.role,
-      },
-      { expiresIn: "28d" },
-    );
-
-    // Set cookies
-    reply.setCookie("accessToken", accessToken, {
+    // Sign token with 24-hour expiration
+    const token = await reply.jwtSign(tokenPayload, { expiresIn: '24h' });
+    
+    // Set HTTP-only cookie with the token
+    reply.setCookie('authToken', token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "strict",
-      path: "/",
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'strict',
+      path: '/',
+      maxAge: 24 * 60 * 60 * 1000 // 24 hours
     });
 
-    reply.setCookie("refreshToken", refreshToken, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "strict",
-      path: "/",
-      maxAge: 28 * 24 * 60 * 60 * 1000, // 28 days
+    // Set CSRF token cookie (accessible to JavaScript)
+    reply.setCookie('csrfToken', csrfToken, {
+      httpOnly: false,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'strict',
+      path: '/',
+      maxAge: 24 * 60 * 60 * 1000 // 24 hours
     });
 
-    logger.debug("Tokens generated and cookies set", { userId: user.userId });
-
-    return reply.status(200).send({
-      success: true,
-      message: "Login successful",
+    // Return user data and CSRF token (but not the JWT)
+    logger.info(`User ${user.email} logged in successfully`);
+    reply.header('X-CSRF-Token', csrfToken).send({
       user: {
         userId: user.userId,
-        email: user.email,
         firstname: user.firstname,
         lastname: user.lastname,
-        role: user.role,
-        avatar: user.avatar
-      },
+        email: user.email,
+        role: user.role
+      }
     });
+    
   } catch (error) {
-    console.error(error);
-    logger.error("Login error occurred", {
-      error: error.message,
-      stack: error.stack,
-      email: req.body?.email,
-    });
-    console.error("Login error:", error);
-    return reply.status(500).send({
-      success: false,
-      error: "Internal server error",
-    });
+    if (error instanceof z.ZodError) {
+      logger.warn('Login validation failed', { errors: error.errors });
+      return reply.code(400).send({ 
+        message: 'Validation error', 
+        errors: error.errors 
+      });
+    }
+    
+    logger.error('Login error', { error: error.message });
+    reply.code(500).send({ message: 'Internal server error' });
   }
 };

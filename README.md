@@ -1,3 +1,86 @@
+# Sir Philip's E-Commerce Platform
+
+Sir Philip's is a robust, full-featured e-commerce solution built with modern web technologies. The platform offers a comprehensive shopping experience for customers and powerful management tools for administrators.
+
+## 📋 Overview
+
+Sir Philip's provides a complete solution for online retail, featuring product management, shopping cart functionality, order processing, delivery tracking, and payment integration. The application is built with a React frontend and a Fastify backend, using PostgreSQL as the database with Prisma ORM.
+
+## ✨ Key Features
+
+### For Customers
+- **User Authentication** - Secure login and registration system with JWT-based authentication
+- **Product Browsing** - Browse products by category with filtering and search capabilities
+- **Shopping Cart** - Add items to cart, modify quantities, and proceed to checkout
+- **Order Management** - Place orders and track their status
+- **Payment Processing** - Multiple payment options (mpesa, credit, bank)
+- **Delivery Tracking** - Monitor the status and location of orders
+- **Product Reviews** - Rate and review purchased products
+
+### For Administrators
+- **Dashboard** - Comprehensive analytics and metrics
+- **Inventory Management** - Add, edit, and remove products
+- **Order Processing** - View, update, and manage customer orders
+- **Delivery Management** - Coordinate and track product deliveries
+- **Category Management** - Organize products into categories
+- **User Management** - Manage customer accounts and permissions
+
+## 🛠️ Technical Architecture
+
+Sir Philip's follows a client-server architecture with:
+
+- **Frontend**: React.js application
+- **Backend**: Fastify.js RESTful API
+- **Database**: PostgreSQL with Prisma ORM
+- **Authentication**: JWT stored in HTTP-only cookies
+- **Validation**: Zod for runtime type checking
+- **Logging**: Winston logger for comprehensive logging
+
+## 🧩 Component Breakdown
+
+### Backend Components
+- **Controllers** - Handle API requests and business logic
+- **Middlewares** - Authenticate requests and validate inputs
+- **Routes** - Define API endpoints
+- **Services** - Implement core business functionality
+- **Utils** - Provide helper functions and utilities
+
+### Database Models
+- User
+- Product
+- Category
+- Order
+- OrderItem
+- Review
+- Cart
+- CartItem
+- Variant
+- Payment
+- Delivery
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v16+)
+- PostgreSQL (v14+)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/your-username/Sir-Philip-s.git
+cd Sir-Philip-s
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Set up environment variables
+Create a `.env` file in the root directory with:
+
 # Sir-Philip-s
 
 Project Update - Authentication & Environment Configuration
@@ -85,3 +168,23 @@ Future Improvements
 Add category-based filtering.
 
 Implement search functionality.
+
+## 🚀 Production Deployment
+
+### Prerequisites
+- Node.js (v16+)
+- PostgreSQL (v14+)
+- Docker and Docker Compose (optional)
+- Nginx (for production hosting)
+- PM2 or similar process manager (for Node.js application)
+
+### Environment Setup
+
+Copy the example environment file and update with your actual values:
+
+```bash
+cp .env.example .env
+# Edit .env with your production values
+```
+
+Required environment variables:
